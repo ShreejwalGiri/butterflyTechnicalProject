@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80AA249A2B99D7F4002F2961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24992B99D7F4002F2961 /* AppDelegate.swift */; };
+		80AA249C2B99D7F4002F2961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA249B2B99D7F4002F2961 /* SceneDelegate.swift */; };
+		80AA249E2B99D7F4002F2961 /* RootVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA249D2B99D7F4002F2961 /* RootVc.swift */; };
+		80AA24A12B99D7F4002F2961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AA249F2B99D7F4002F2961 /* Main.storyboard */; };
+		80AA24A42B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24A22B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld */; };
+		80AA24A62B99D7F7002F2961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80AA24A52B99D7F7002F2961 /* Assets.xcassets */; };
+		80AA24A92B99D7F7002F2961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AA24A72B99D7F7002F2961 /* LaunchScreen.storyboard */; };
+		80AA24B42B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24B32B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift */; };
+		80AA24BE2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24BD2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift */; };
+		80AA24C02B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24BF2B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80AA24B02B99D7F8002F2961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80AA248E2B99D7F4002F2961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80AA24952B99D7F4002F2961;
+			remoteInfo = ButterflyShreejwalGiri;
+		};
+		80AA24BA2B99D7F8002F2961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80AA248E2B99D7F4002F2961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80AA24952B99D7F4002F2961;
+			remoteInfo = ButterflyShreejwalGiri;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80AA24962B99D7F4002F2961 /* ButterflyShreejwalGiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterflyShreejwalGiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AA24992B99D7F4002F2961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80AA249B2B99D7F4002F2961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		80AA249D2B99D7F4002F2961 /* RootVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVc.swift; sourceTree = "<group>"; };
+		80AA24A02B99D7F4002F2961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80AA24A32B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ButterflyShreejwalGiri.xcdatamodel; sourceTree = "<group>"; };
+		80AA24A52B99D7F7002F2961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80AA24A82B99D7F7002F2961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80AA24AA2B99D7F7002F2961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80AA24AF2B99D7F8002F2961 /* ButterflyShreejwalGiriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyShreejwalGiriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AA24B32B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyShreejwalGiriTests.swift; sourceTree = "<group>"; };
+		80AA24B92B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyShreejwalGiriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AA24BD2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyShreejwalGiriUITests.swift; sourceTree = "<group>"; };
+		80AA24BF2B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyShreejwalGiriUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80AA24932B99D7F4002F2961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AA24AC2B99D7F8002F2961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AA24B62B99D7F8002F2961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80AA248D2B99D7F4002F2961 = {
+			isa = PBXGroup;
+			children = (
+				80AA24982B99D7F4002F2961 /* ButterflyShreejwalGiri */,
+				80AA24B22B99D7F8002F2961 /* ButterflyShreejwalGiriTests */,
+				80AA24BC2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests */,
+				80AA24972B99D7F4002F2961 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80AA24972B99D7F4002F2961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80AA24962B99D7F4002F2961 /* ButterflyShreejwalGiri.app */,
+				80AA24AF2B99D7F8002F2961 /* ButterflyShreejwalGiriTests.xctest */,
+				80AA24B92B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80AA24982B99D7F4002F2961 /* ButterflyShreejwalGiri */ = {
+			isa = PBXGroup;
+			children = (
+				80AA24992B99D7F4002F2961 /* AppDelegate.swift */,
+				80AA249B2B99D7F4002F2961 /* SceneDelegate.swift */,
+				80AA249D2B99D7F4002F2961 /* RootVc.swift */,
+				80AA249F2B99D7F4002F2961 /* Main.storyboard */,
+				80AA24A52B99D7F7002F2961 /* Assets.xcassets */,
+				80AA24A72B99D7F7002F2961 /* LaunchScreen.storyboard */,
+				80AA24AA2B99D7F7002F2961 /* Info.plist */,
+				80AA24A22B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld */,
+			);
+			path = ButterflyShreejwalGiri;
+			sourceTree = "<group>";
+		};
+		80AA24B22B99D7F8002F2961 /* ButterflyShreejwalGiriTests */ = {
+			isa = PBXGroup;
+			children = (
+				80AA24B32B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift */,
+			);
+			path = ButterflyShreejwalGiriTests;
+			sourceTree = "<group>";
+		};
+		80AA24BC2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80AA24BD2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift */,
+				80AA24BF2B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift */,
+			);
+			path = ButterflyShreejwalGiriUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80AA24C32B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiri" */;
+			buildPhases = (
+				80AA24922B99D7F4002F2961 /* Sources */,
+				80AA24932B99D7F4002F2961 /* Frameworks */,
+				80AA24942B99D7F4002F2961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ButterflyShreejwalGiri;
+			productName = ButterflyShreejwalGiri;
+			productReference = 80AA24962B99D7F4002F2961 /* ButterflyShreejwalGiri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80AA24AE2B99D7F8002F2961 /* ButterflyShreejwalGiriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80AA24C62B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriTests" */;
+			buildPhases = (
+				80AA24AB2B99D7F8002F2961 /* Sources */,
+				80AA24AC2B99D7F8002F2961 /* Frameworks */,
+				80AA24AD2B99D7F8002F2961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80AA24B12B99D7F8002F2961 /* PBXTargetDependency */,
+			);
+			name = ButterflyShreejwalGiriTests;
+			productName = ButterflyShreejwalGiriTests;
+			productReference = 80AA24AF2B99D7F8002F2961 /* ButterflyShreejwalGiriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80AA24B82B99D7F8002F2961 /* ButterflyShreejwalGiriUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80AA24C92B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriUITests" */;
+			buildPhases = (
+				80AA24B52B99D7F8002F2961 /* Sources */,
+				80AA24B62B99D7F8002F2961 /* Frameworks */,
+				80AA24B72B99D7F8002F2961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80AA24BB2B99D7F8002F2961 /* PBXTargetDependency */,
+			);
+			name = ButterflyShreejwalGiriUITests;
+			productName = ButterflyShreejwalGiriUITests;
+			productReference = 80AA24B92B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80AA248E2B99D7F4002F2961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					80AA24952B99D7F4002F2961 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					80AA24AE2B99D7F8002F2961 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 80AA24952B99D7F4002F2961;
+					};
+					80AA24B82B99D7F8002F2961 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 80AA24952B99D7F4002F2961;
+					};
+				};
+			};
+			buildConfigurationList = 80AA24912B99D7F4002F2961 /* Build configuration list for PBXProject "ButterflyShreejwalGiri" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80AA248D2B99D7F4002F2961;
+			productRefGroup = 80AA24972B99D7F4002F2961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */,
+				80AA24AE2B99D7F8002F2961 /* ButterflyShreejwalGiriTests */,
+				80AA24B82B99D7F8002F2961 /* ButterflyShreejwalGiriUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80AA24942B99D7F4002F2961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AA24A92B99D7F7002F2961 /* LaunchScreen.storyboard in Resources */,
+				80AA24A62B99D7F7002F2961 /* Assets.xcassets in Resources */,
+				80AA24A12B99D7F4002F2961 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AA24AD2B99D7F8002F2961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AA24B72B99D7F8002F2961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80AA24922B99D7F4002F2961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AA24A42B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld in Sources */,
+				80AA249E2B99D7F4002F2961 /* RootVc.swift in Sources */,
+				80AA249A2B99D7F4002F2961 /* AppDelegate.swift in Sources */,
+				80AA249C2B99D7F4002F2961 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AA24AB2B99D7F8002F2961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AA24B42B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80AA24B52B99D7F8002F2961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AA24BE2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift in Sources */,
+				80AA24C02B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80AA24B12B99D7F8002F2961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */;
+			targetProxy = 80AA24B02B99D7F8002F2961 /* PBXContainerItemProxy */;
+		};
+		80AA24BB2B99D7F8002F2961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */;
+			targetProxy = 80AA24BA2B99D7F8002F2961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80AA249F2B99D7F4002F2961 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80AA24A02B99D7F4002F2961 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80AA24A72B99D7F7002F2961 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80AA24A82B99D7F7002F2961 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80AA24C12B99D7F8002F2961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80AA24C22B99D7F8002F2961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80AA24C42B99D7F8002F2961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NJ4S3KMLL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ButterflyShreejwalGiri/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.butterfly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80AA24C52B99D7F8002F2961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NJ4S3KMLL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ButterflyShreejwalGiri/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.butterfly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80AA24C72B99D7F8002F2961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NSK6X7SHY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflyShreejwalGiri.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButterflyShreejwalGiri";
+			};
+			name = Debug;
+		};
+		80AA24C82B99D7F8002F2961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NSK6X7SHY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflyShreejwalGiri.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButterflyShreejwalGiri";
+			};
+			name = Release;
+		};
+		80AA24CA2B99D7F8002F2961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NSK6X7SHY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButterflyShreejwalGiri;
+			};
+			name = Debug;
+		};
+		80AA24CB2B99D7F8002F2961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NSK6X7SHY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButterflyShreejwalGiri;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80AA24912B99D7F4002F2961 /* Build configuration list for PBXProject "ButterflyShreejwalGiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AA24C12B99D7F8002F2961 /* Debug */,
+				80AA24C22B99D7F8002F2961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80AA24C32B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AA24C42B99D7F8002F2961 /* Debug */,
+				80AA24C52B99D7F8002F2961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80AA24C62B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AA24C72B99D7F8002F2961 /* Debug */,
+				80AA24C82B99D7F8002F2961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80AA24C92B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AA24CA2B99D7F8002F2961 /* Debug */,
+				80AA24CB2B99D7F8002F2961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80AA24A22B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80AA24A32B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodel */,
+			);
+			currentVersion = 80AA24A32B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodel */;
+			path = ButterflyShreejwalGiri.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 80AA248E2B99D7F4002F2961 /* Project object */;
+}
