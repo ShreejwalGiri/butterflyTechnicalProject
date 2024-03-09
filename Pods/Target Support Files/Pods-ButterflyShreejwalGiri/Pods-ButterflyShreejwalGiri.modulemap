@@ -1,0 +1,6 @@
+module Pods_ButterflyShreejwalGiri {
+  umbrella header "Pods-ButterflyShreejwalGiri-umbrella.h"
+
+  export *
+  module * { export * }
+}
