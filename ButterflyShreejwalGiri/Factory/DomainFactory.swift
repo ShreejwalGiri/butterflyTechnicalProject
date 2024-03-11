@@ -23,6 +23,19 @@ public class DomainFactory {
     }
     
     public func providePurchaseUc() -> PurchaseUc {
-        return PurchaseUc(purchaseRepo: self.providePurchaseRepo())
+        
+        if let purchaseUc = purchaseUc {
+            return purchaseUc
+        }
+        purchaseUc = PurchaseUc(purchaseRepo: self.providePurchaseRepo())
+        return purchaseUc!
+    }
+    
+    public func provideMovieListRepo() -> MovieListRepo {
+        return MovieListRepoImpl(endpoint: self.endpoint)
+    }
+    
+    public func provideMovieListUc() -> MovieListUc {
+        return MovieListUc(movieListRepo: self.provideMovieListRepo())
     }
 }

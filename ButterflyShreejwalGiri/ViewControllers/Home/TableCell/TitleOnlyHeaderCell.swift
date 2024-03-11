@@ -11,6 +11,14 @@ open class TitleOnlyHeaderCell: UITableViewHeaderFooterView {
     
     lazy var titleLabel = {
         let lbl = UILabel()
+        lbl.font = UIFont.boldSystemFont(ofSize: 20)
+        return lbl
+    }()
+    
+    lazy var lastUpdatedDate: UILabel = {
+        let lbl = UILabel()
+        lbl.textAlignment = .right
+        lbl.font = UIFont.boldSystemFont(ofSize: 16)
         return lbl
     }()
     
@@ -28,7 +36,9 @@ open class TitleOnlyHeaderCell: UITableViewHeaderFooterView {
         self.contentView.backgroundColor = .clear
         
         let mainHStack = UIView().hstack(
-            titleLabel
+            titleLabel,
+            lastUpdatedDate,
+            spacing: 10
         )
         
         self.contentView.addSubview(mainHStack)

@@ -9,13 +9,9 @@ import UIKit
 
 class RootVc: UIViewController {
     
-    lazy var toolbar: DefaultToolBar = {
-        let toolbarView = DefaultToolBar(toolbarTitle: "Test")
-        return toolbarView
-    }()
-    
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: CGRect.zero, style: .plain)
+        tableView.backgroundColor = .clear
         return tableView
     }()
     
@@ -26,10 +22,9 @@ class RootVc: UIViewController {
     
     open func setupViews() {
         
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .systemBackground
         
         let mainStack = UIView().stack(
-            toolbar,
             tableView,
             spacing: 20
         ).padLeft(16).padRight(16).padTop(16).padBottom(20)
@@ -37,10 +32,6 @@ class RootVc: UIViewController {
         self.view.addSubview(mainStack)
         mainStack.fillSuperview()
         tableViewSetup()
-    }
-    
-    open func setupActions() {
-        self.toolbar.backButton.addTarget(self, action: #selector(backNavClick), for: .touchUpInside)
     }
     
     private func tableViewSetup() {

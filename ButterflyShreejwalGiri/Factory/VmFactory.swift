@@ -20,5 +20,9 @@ public class VmFactory {
     public func providePurchaseListVm() -> PurchaseVm {
         return PurchaseVm(purchaseUc: domainFactory.providePurchaseUc())
     }
+    
+    public func provideMovieVm() -> MovieListVm {
+        return MovieListVm(movieListUc: domainFactory.provideMovieListUc())
+    }
 }
 

@@ -3,6 +3,9 @@
 
 def butterfly_UI_pods
   pod 'LBTATools', '1.0.8'
+#  pod 'SDWebImage'
+  pod 'IQKeyboardManager'
+  pod 'SDWebImage', :modular_headers => true
 end
 
 def butterfly_networking_pods
@@ -11,12 +14,13 @@ def butterfly_networking_pods
   pod 'RxAlamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'LBTATools', '1.0.8'
+ 
 end
 
 target 'ButterflyShreejwalGiri' do
-  butterfly_networking_pods
   butterfly_UI_pods
+  butterfly_networking_pods
+ 
 end
 
 

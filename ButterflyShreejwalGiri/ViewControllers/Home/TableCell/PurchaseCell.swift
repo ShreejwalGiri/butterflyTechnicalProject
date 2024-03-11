@@ -11,33 +11,45 @@ class PurchaseCell: UITableViewCell {
     
     lazy private var product: UILabel = {
         let lbl = UILabel()
+        lbl.textAlignment = .left
+        lbl.font = UIFont.boldSystemFont(ofSize: 16)
         return lbl
     }()
     
-    lazy private var quantity: UILabel = {
+    lazy private var productId: UILabel = {
         let lbl = UILabel()
+        lbl.textAlignment = .left
         return lbl
     }()
     
-    lazy private var price: UILabel = {
+    lazy private var numberOfItems: UILabel = {
         let lbl = UILabel()
+        lbl.textAlignment = .left
         return lbl
     }()
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
     
     func configure(with item: Items) {
         
+        self.contentView.backgroundColor = .systemBackground
+        
         self.product.text = item.product
         
-        hstack(
+        self.productId.text = "Product ID : \( item.id ?? ""  )"
+        self.numberOfItems.text = "No. of Items : \( item.quantity ?? ""  )"
+        
+        let itemInfo = UIView().stack(
+            productId,
+            numberOfItems,
+            spacing: 0
+        )
+        
+        stack(
             product,
             UIView(),
+            itemInfo,
             spacing: 10.0,
-            alignment: .center
-        ).padLeft(10).padRight(10).padTop(5).padBottom(5)
+            alignment: .leading
+        ).padLeft(10).padRight(10).padTop(10).padBottom(5)
     }
 
 }

@@ -54,7 +54,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func rootVcSetupMethod(_ windowScene: UIWindowScene, _ scene: UIScene) {
        
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = HomeVc()
+        let vc = HomeVc()
+        let navigationController = UINavigationController(rootViewController: MoviesListVc())
+        window?.rootViewController = navigationController
+//        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         guard let _ = (scene as? UIWindowScene) else { return }
     }

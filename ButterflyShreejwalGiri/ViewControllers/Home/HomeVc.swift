@@ -10,6 +10,8 @@ import UIKit
 
 class HomeVc: RootVc {
     
+    public var navigationDelegate: BaseCoordinator?
+    
     final let purchaseListVm = AppFactory.initialize().provideVmFactory().providePurchaseListVm()
     
     private var purchaseList = [PurchaseModel]()
@@ -20,12 +22,23 @@ class HomeVc: RootVc {
     }
     
     private func setupDelegate() {
+        
+        title = "Butterfly Purchase Orders"
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem = addButton
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerClass(PurchaseCell.self)
         tableView.registerClassHeaderFooter(TitleOnlyHeaderCell.self)
         purchaseListVm.delegate = self
         purchaseListVm.getPurchaseList()
+    }
+    
+    @objc func addButtonTapped() {
+       
+        let vc = AddPurchaseVc()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -49,12 +62,16 @@ extension HomeVc: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: TitleOnlyHeaderCell.identifier) as! TitleOnlyHeaderCell
         let title = self.purchaseList[section].customer
-        cell.titleLabel.text = title
+        cell.titleLabel.text = self.purchaseList[section].customer
+        cell.lastUpdatedDate.text = self.purchaseList[section].created_at?.convertStringToDate()?.convertDateToString()
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let items = self.purchaseList[indexPath.section].items?[indexPath.row] else { return }
+        let vc = DetailsVc()
+        vc.popupateData(items)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

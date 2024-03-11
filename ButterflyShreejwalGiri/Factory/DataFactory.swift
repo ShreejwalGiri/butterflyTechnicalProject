@@ -14,7 +14,7 @@ public class DataFactory {
     }
     
     public func provideServiceRouter() -> ServiceRouter {
-        return ServiceRouter(apiServiceModel: ApiServiceModel(baseUrl: SchemeEnvironmentConfig.baseUrl, serviceEnvironment: SchemeEnvironmentConfig.schemeType, serviceVersion: SchemeEnvironmentConfig.schemeVersion))
+        return ServiceRouter(apiServiceModel: ApiServiceModel(baseUrl: SchemeEnvironmentConfig.baseUrl))
     }
     
     public func provideEndpoint() -> EndPoint {

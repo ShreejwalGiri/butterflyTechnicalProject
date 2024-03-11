@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.9.0)
   - HandyJSON (5.0.2)
+  - IQKeyboardManager (6.5.17)
   - LBTATools (1.0.8)
   - RxAlamofire (6.1.1):
     - RxAlamofire/Core (= 6.1.1)
@@ -13,34 +14,43 @@ PODS:
   - RxRelay (6.6.0):
     - RxSwift (= 6.6.0)
   - RxSwift (6.6.0)
+  - SDWebImage (5.19.0):
+    - SDWebImage/Core (= 5.19.0)
+  - SDWebImage/Core (5.19.0)
 
 DEPENDENCIES:
   - Alamofire
   - HandyJSON
+  - IQKeyboardManager
   - LBTATools (= 1.0.8)
   - RxAlamofire
   - RxCocoa
   - RxSwift
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - HandyJSON
+    - IQKeyboardManager
     - LBTATools
     - RxAlamofire
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IQKeyboardManager: 904d013844bbae0abe073f015487bfebe5476335
   LBTATools: 913ba0a3fbad250d042368ca2a0f314cdb015de1
   RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SDWebImage: 981fd7e860af070920f249fd092420006014c3eb
 
-PODFILE CHECKSUM: 7e350dc71217242c7ed3bb919c8a9d334772d382
+PODFILE CHECKSUM: 10912e1bdf63098f09157d5db2557bc1bcb2993d
 
 COCOAPODS: 1.15.2

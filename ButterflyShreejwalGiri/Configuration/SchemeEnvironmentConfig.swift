@@ -8,8 +8,7 @@
 import Foundation
 
 open class SchemeEnvironmentConfig {
-    public static var baseUrl: String          =  SchemeEnvironmentConfig.baseUrl
-    public static var schemeType: String       =  SchemeEnvironmentConfig.schemeType
-    public static var schemeVersion: String    =  SchemeEnvironmentConfig.schemeVersion
-    public static var applicationName: String  =  SchemeEnvironmentConfig.applicationName
+    public static var baseUrl: String          = "https://api.themoviedb.org/3"
+    public static var applicationName: String  = SchemeEnvironmentConfig.applicationName
+    public static var baseImageUrl: String     = "https://image.tmdb.org/t/p/original"
 }
