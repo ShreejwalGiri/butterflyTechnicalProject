@@ -42,6 +42,8 @@
 		8077C76F2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8077C76D2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodeld */; };
 		8077C7722B9D8ADF0059E54F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077C7712B9D8ADF0059E54F /* CoreDataStack.swift */; };
 		8077C7752B9D8D030059E54F /* AddPurchaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077C7742B9D8D030059E54F /* AddPurchaseVc.swift */; };
+		8099160D2B9FC3A900A512EE /* MovieDetailsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099160C2B9FC3A900A512EE /* MovieDetailsVc.swift */; };
+		809916102B9FC7A000A512EE /* MovieDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099160F2B9FC7A000A512EE /* MovieDetailsCell.swift */; };
 		80AA249A2B99D7F4002F2961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24992B99D7F4002F2961 /* AppDelegate.swift */; };
 		80AA249C2B99D7F4002F2961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA249B2B99D7F4002F2961 /* SceneDelegate.swift */; };
 		80AA249E2B99D7F4002F2961 /* RootVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA249D2B99D7F4002F2961 /* RootVc.swift */; };
@@ -123,6 +125,8 @@
 		8077C76E2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PurchaseOrderList.xcdatamodel; sourceTree = "<group>"; };
 		8077C7712B9D8ADF0059E54F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		8077C7742B9D8D030059E54F /* AddPurchaseVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurchaseVc.swift; sourceTree = "<group>"; };
+		8099160C2B9FC3A900A512EE /* MovieDetailsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsVc.swift; sourceTree = "<group>"; };
+		8099160F2B9FC7A000A512EE /* MovieDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCell.swift; sourceTree = "<group>"; };
 		80AA24962B99D7F4002F2961 /* ButterflyShreejwalGiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterflyShreejwalGiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80AA24992B99D7F4002F2961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80AA249B2B99D7F4002F2961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -430,6 +434,23 @@
 			path = AddPurchase;
 			sourceTree = "<group>";
 		};
+		8099160A2B9FC38D00A512EE /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				8099160E2B9FC79000A512EE /* TableViewCell */,
+				8099160C2B9FC3A900A512EE /* MovieDetailsVc.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		8099160E2B9FC79000A512EE /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8099160F2B9FC7A000A512EE /* MovieDetailsCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		80AA248D2B99D7F4002F2961 = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +574,7 @@
 		80E985032B9E77EF0089EFEC /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				8099160A2B9FC38D00A512EE /* MovieDetails */,
 				80E985062B9E80F00089EFEC /* TableCell */,
 				80E985042B9E78010089EFEC /* MoviesListVc.swift */,
 			);
@@ -778,6 +800,7 @@
 				80188C6E2B9C27D0001630B2 /* PurchaseRepoImpl.swift in Sources */,
 				8077C7752B9D8D030059E54F /* AddPurchaseVc.swift in Sources */,
 				80188C402B9BEBD2001630B2 /* ServiceName.swift in Sources */,
+				809916102B9FC7A000A512EE /* MovieDetailsCell.swift in Sources */,
 				80188C682B9C2698001630B2 /* ItemModel.swift in Sources */,
 				80188C732B9C280D001630B2 /* EndPointImpl.swift in Sources */,
 				80188C712B9C2804001630B2 /* EndPoint.swift in Sources */,
@@ -797,6 +820,7 @@
 				80E9850C2B9EAE340089EFEC /* MovieResult.swift in Sources */,
 				8077C7662B9D4FD40059E54F /* DateConfig.swift in Sources */,
 				80188C472B9BEF70001630B2 /* StoreData.swift in Sources */,
+				8099160D2B9FC3A900A512EE /* MovieDetailsVc.swift in Sources */,
 				80188C782B9C2C1D001630B2 /* BaseVm.swift in Sources */,
 				8077C76C2B9D54510059E54F /* BaseCoordinator.swift in Sources */,
 				80188C662B9C25B0001630B2 /* PurchaseModel.swift in Sources */,

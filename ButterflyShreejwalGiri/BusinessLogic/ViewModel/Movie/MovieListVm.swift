@@ -16,6 +16,7 @@ public protocol MovieListDelegate {
 
 public extension MovieListDelegate {
     func movieDetails(data: MovieDetails) {}
+    func movieList(data: [MovieResult]) {}
 }
 
 public class MovieListVm: BaseVm {
@@ -45,7 +46,7 @@ public class MovieListVm: BaseVm {
         )
     }
     
-    public func getMovieList() {
+    public func getMovieList(forPage page: Int) {
         self.loading.onNext(true)
         disposeBag.insert(
             movieListUc.getMovieList().subscribe(onNext: { movieList in

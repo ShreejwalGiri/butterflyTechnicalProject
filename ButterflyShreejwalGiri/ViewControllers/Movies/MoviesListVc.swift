@@ -11,10 +11,15 @@ import UIKit
 class MoviesListVc: RootVc {
     
     public var navigationDelegate: BaseCoordinator?
-    
     final let provideMovieVm = AppFactory.initialize().provideVmFactory().provideMovieVm()
     
     private var movieList = [MovieResult]()
+    private var filteredMovieList = [MovieResult]()
+    var searchText: String = ""
+    
+    private var currentPage = 1
+    private let itemsPerPage = 20
+    private var isLoadingMore = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,71 +35,86 @@ class MoviesListVc: RootVc {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerClass(MovieListCell.self)
-//        tableView.registerClassHeaderFooter(TitleOnlyHeaderCell.self)
         provideMovieVm.delegate = self
-        provideMovieVm.getMovieList()
+        provideMovieVm.getMovieList(forPage: 1)
     }
     
     @objc func addButtonTapped() {
-       
+        
         let vc = AddPurchaseVc()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func filterData() {
+        if searchText.isEmpty {
+            filteredMovieList = movieList
+        } else {
+            filteredMovieList = movieList.filter { movie in
+                if let title = movie.title {
+                    return title.localizedCaseInsensitiveContains(searchText)
+                }
+                return false
+            }
+        }
     }
 }
 
 extension MoviesListVc: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.movieList.count
+        return self.filteredMovieList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieListCell") as? MovieListCell else { return UITableViewCell() }
-        let items = self.movieList[indexPath.row]
+        let items = self.filteredMovieList[indexPath.row]
         cell.configure(with: items)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        guard let items = self.movieList[indexPath.row] else { return }
-//        let vc = DetailsVc()
-//        vc.popupateData(items)
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = MovieDetailsVc()
+        vc.modalPresentationStyle = .overFullScreen
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        let headerView = UIView()
-        headerView.withHeight(50)
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 50))
         headerView.backgroundColor = .white
         
-//        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 50))
-//           headerView.backgroundColor = .white
-           
-           let textField = UITextField(frame: CGRect(x: 10, y: 10, width: headerView.frame.width - 20, height: 30))
-           textField.placeholder = "Search"
-           textField.backgroundColor = UIColor(white: 0.9, alpha: 1.0)
-           textField.layer.cornerRadius = 5
-           textField.layer.masksToBounds = true
-           textField.addTarget(self, action: #selector(searchTextChanged(_:)), for: .editingChanged)
+        let textField = UITextField(frame: CGRect(x: 10, y: 10, width: headerView.frame.width - 20, height: 50))
+        textField.placeholder = "Search For Movies"
+        textField.backgroundColor = UIColor(white: 0.9, alpha: 1.0)
+        textField.layer.cornerRadius = 5
+        textField.layer.masksToBounds = true
+        textField.addTarget(self, action: #selector(searchTextChanged(_:)), for: .editingChanged)
         headerView.addSubview(textField)
-        textField.fillSuperview()
-           
-           return headerView
+        
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == filteredMovieList.count - 1 && !isLoadingMore {
+            currentPage += 1
+            isLoadingMore = true
+            provideMovieVm.getMovieList(forPage: currentPage) // Load next page
+        }
     }
     
     @objc func searchTextChanged(_ sender: UITextField) {
-        // Perform search operation based on the text entered in the search text field
-        let searchText = sender.text ?? ""
-        print("Search text changed: \(searchText)")
-        // Update your data source and reload table view accordingly
+        searchText = sender.text ?? ""
+        filterData()
+        tableView.reloadData()
     }
 }
 
 extension MoviesListVc: MovieListDelegate {
+    
     func movieList(data: [MovieResult]) {
-        self.movieList = data
-        self.tableView.reloadData()
+        self.isLoadingMore = false
+        self.movieList.append(contentsOf: data)
+        filterData()
+        tableView.reloadData()
     }
     
     
@@ -103,7 +123,7 @@ extension MoviesListVc: MovieListDelegate {
     }
     
     func movieFailure(msg: String) {
-    
+        
     }
 }
 

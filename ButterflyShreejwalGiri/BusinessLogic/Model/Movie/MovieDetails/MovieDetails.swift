@@ -22,6 +22,11 @@ public struct MovieDetails: HandyJSON {
     public var overview: String?
     public var popularity: Float?
     public var poster_path: String?
+    public var poster_full_path: String? {
+        get {
+            return SchemeEnvironmentConfig.baseImageUrl + (self.poster_path ?? "")
+        }
+    }
     public var production_companies: [ProductionCompany]?
     public var production_countries: [ProductionCountry]?
     public var release_date: String?
