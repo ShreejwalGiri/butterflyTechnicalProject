@@ -40,8 +40,7 @@ public class ApiServices {
             HTTPHeader(name: "Content-Type", value: "application/json"),
         ]
         
-        headers.add(name: "Authorization", value: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDYwMzAwMzhmM2U4YTVkYzk2ZDJmYWZjZGJiOGMzNyIsInN1YiI6IjY1ZWUzMTdmZTIyZDI4MDE2MDIwZDlmYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CBe9Az84GQsDpjM6QaFRBHKNpiuQ3OYp_gxDCRVgSh4")
-        
+        headers.add(name: "Authorization", value: SchemeEnvironmentConfig.authorizationToken)
         
         return RxAlamofire.requestData(.get, serviceModel.url, headers: headers)
             .flatMap { (response, data) -> Observable<T> in
@@ -60,11 +59,7 @@ public class ApiServices {
         print("Request \u{1F601}===\u{2705}=====\u{1F601} \n" + serviceModel.url)
         print("Method: GET")
         
-        var headers: HTTPHeaders = [
-            HTTPHeader(name: "Content-Type", value: "application/json"),
-        ]
-        
-        return RxAlamofire.requestData(.get, serviceModel.url, headers: headers)
+        return RxAlamofire.requestData(.get, serviceModel.url)
             .flatMap { (response, data) -> Observable<[PurchaseModel]> in
                 let jsonString = String(data: data, encoding: .utf8) ?? ""
                 
@@ -88,25 +83,22 @@ public class ApiServices {
                 print("Failed to parse JSON data")
                 return []
             }
-
+            
             var purchaseModels: [PurchaseModel] = []
-
+            
             for jsonObject in jsonArray {
                 if let purchaseModel = PurchaseModel.deserialize(from: jsonObject) {
                     purchaseModels.append(purchaseModel)
                 }
             }
-
+            
             return purchaseModels
         } catch {
             print("Error: \(error)")
             return []
         }
     }
-
-
     
-
     private func checkStatus<T: HandyJSON>(statusCode: Int, jsonString: NSString, model: T.Type) -> Observable<T> {
         if 200..<300 ~= statusCode {
             let dataParamsMergeValue = returnDictionary(jsonString: jsonString)
@@ -127,7 +119,7 @@ public class ApiServices {
         }
     }
     
-
+    
     private func returnDictionary(jsonString: NSString) -> NSString {
         
         guard let jsonData = jsonString.data(using: String.Encoding.utf8.rawValue) else {

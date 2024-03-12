@@ -9,6 +9,6 @@ import Foundation
 import RxSwift
 
 public protocol MovieListRepo {
-    func getMovieDetails() -> Observable<MovieDetails>
-    func getMovieList() -> Observable<MovieList>
+    func getMovieDetails(id movieID: Int) -> Observable<MovieDetails>
+    func getMovieList(orPage page: Int) -> Observable<MovieList>
 }

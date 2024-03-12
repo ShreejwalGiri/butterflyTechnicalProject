@@ -26,16 +26,16 @@ public class EndPointImpl: EndPoint {
         }
     }
     
-    public func getMovieDetails() -> Observable<MovieDetails> {
-        return serviceRouter.getService(name: .movieDetails).flatMap {
+    public func getMovieDetails(id movieID: Int) -> Observable<MovieDetails> {
+        return serviceRouter.getService(name: .movieDetails(movieID)).flatMap {
             return self.apiService.get(serviceModel: $0, model: MovieDetails.self).map { purchaseModel in
                 return purchaseModel
             }
         }
     }
     
-    public func getMovieList() -> Observable<MovieList> {
-        return serviceRouter.getService(name: .movieList).flatMap {
+    public func getMovieList(orPage page: Int) -> Observable<MovieList> {
+        return serviceRouter.getService(name: .movieList(page)).flatMap {
             return self.apiService.get(serviceModel: $0, model: MovieList.self).map { purchaseModel in
                 return purchaseModel
             }

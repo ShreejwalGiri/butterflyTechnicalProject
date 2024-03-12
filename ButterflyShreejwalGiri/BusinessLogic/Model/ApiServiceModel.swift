@@ -27,23 +27,6 @@ public struct ApiServiceModel: HandyJSON {
     public init(errorDelegate: ApiServiceErrorDelegate? = nil) {
         self.errorDelegate = errorDelegate
     }
-
-//    public func get<T: HandyJSON>(serviceModel: ServiceModel, model: T.Type) -> Observable<T> {
-//        print("Request \u{1F601}===\u{2705}=====\u{1F601} \n" + serviceModel.url)
-//        print("Method: GET")
-//        
-//        return RxAlamofire.requestData(.get, serviceModel.url)
-//            .flatMap { (response, data) -> Observable<T> in
-//                let jsonString = data.prettyPrintedJSONString
-//                
-//                print("RAW Response \u{1F601}====\u{2705}====\u{1F601} \n" + serviceModel.url)
-//                print(jsonString)
-//                print("END \u{1F601}========\u{1F601}")
-//                
-//                let statusResponse = self.checkStatus(statusCode: response.statusCode, jsonString: jsonString, model: T.self)
-//                return statusResponse
-//            }
-//    }
     
     public func get<T: HandyJSON>(serviceModel: ServiceModel, model: T.Type) -> Observable<T> {
         print("Request \u{1F601}===\u{2705}=====\u{1F601} \n" + serviceModel.url)
@@ -53,9 +36,7 @@ public struct ApiServiceModel: HandyJSON {
             HTTPHeader(name: "Content-Type", value: "application/json"),
         ]
         
-       
-            headers.add(name: "Authorization", value: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDYwMzAwMzhmM2U4YTVkYzk2ZDJmYWZjZGJiOGMzNyIsInN1YiI6IjY1ZWUzMTdmZTIyZDI4MDE2MDIwZDlmYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CBe9Az84GQsDpjM6QaFRBHKNpiuQ3OYp_gxDCRVgSh4")
-        
+        headers.add(name: "Authorization", value: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDYwMzAwMzhmM2U4YTVkYzk2ZDJmYWZjZGJiOGMzNyIsInN1YiI6IjY1ZWUzMTdmZTIyZDI4MDE2MDIwZDlmYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CBe9Az84GQsDpjM6QaFRBHKNpiuQ3OYp_gxDCRVgSh4")
         
         return RxAlamofire.requestData(.get, serviceModel.url, headers: headers)
             .flatMap { (response, data) -> Observable<T> in
@@ -150,7 +131,7 @@ public struct ApiServiceModel: HandyJSON {
         var finaDict: [String: Any] = jsonObject
         
         if let dataDictValue = finaDict[paramsConstants.data] as? [String: Any] {
-           var finalDataDictVal = dataDictValue
+            var finalDataDictVal = dataDictValue
             let dataMessage = finalDataDictVal[paramsConstants.message]
             finalDataDictVal.removeValue(forKey: paramsConstants.message)
             finaDict.merge(finalDataDictVal) { _, _ in
@@ -170,9 +151,7 @@ public struct ApiServiceModel: HandyJSON {
             return NSString(string: "")
         }
     }
-    
 }
-
 
 extension Data {
     var prettyPrintedJSONString: NSString {
@@ -185,7 +164,6 @@ extension Data {
 }
 
 public extension Dictionary {
-    
     func printAsJSON() {
         if let theJSONData = try? JSONSerialization.data(withJSONObject: self, options: .prettyPrinted),
            let theJSONText = String(data: theJSONData, encoding: String.Encoding.ascii) {

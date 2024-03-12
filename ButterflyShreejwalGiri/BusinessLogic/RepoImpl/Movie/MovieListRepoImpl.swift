@@ -16,11 +16,11 @@ public class MovieListRepoImpl: MovieListRepo {
         self.endpoint = endpoint
     }
     
-    public func getMovieDetails() -> Observable<MovieDetails> {
-        return endpoint.getMovieDetails()
+    public func getMovieDetails(id movieID: Int) -> Observable<MovieDetails> {
+        return endpoint.getMovieDetails(id: movieID)
     }
     
-    public func getMovieList() -> Observable<MovieList> {
-        return endpoint.getMovieList()
+    public func getMovieList(orPage page: Int) -> Observable<MovieList> {
+        return endpoint.getMovieList(orPage: page)
     }
 }

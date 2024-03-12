@@ -40,5 +40,21 @@ public struct MovieDetails: HandyJSON {
     public var vote_average: Float?
     public var vote_count: Int?
     
+    public var movieInfo: [[String: [String]]]? {
+        get {
+            var result: [[String: [String]]] = [[String: [String]]]()
+            
+            var language = [String]()
+            for data in spoken_languages ?? [] {
+                language.append(data.english_name ?? "")
+            }
+            
+            result.append(["Spoken Language": language])
+            result.append(["Popularity": ["\(popularity ?? 0.0)"]])
+            
+            return result
+        }
+    }
+    
     public init() {}
 }

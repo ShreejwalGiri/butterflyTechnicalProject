@@ -21,6 +21,8 @@ class MoviesListVc: RootVc {
     private let itemsPerPage = 20
     private var isLoadingMore = false
     
+    lazy var searchBar:UISearchBar = UISearchBar()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupDelegate()
@@ -28,15 +30,16 @@ class MoviesListVc: RootVc {
     
     private func setupDelegate() {
         
-        title = "Butterfly Purchase Orders"
+        title = "Movie List"
+        searchBar.placeholder = "Search Movies"
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
         navigationItem.rightBarButtonItem = addButton
-        
+        searchBar.delegate = self 
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerClass(MovieListCell.self)
         provideMovieVm.delegate = self
-        provideMovieVm.getMovieList(forPage: 1)
+        provideMovieVm.getMovieList(forPage: 1, paginationEnable: true)
     }
     
     @objc func addButtonTapped() {
@@ -74,35 +77,56 @@ extension MoviesListVc: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = MovieDetailsVc()
-        vc.modalPresentationStyle = .overFullScreen
-        self.navigationController?.pushViewController(vc, animated: true)
+        vc.selectedMovieList = self.filteredMovieList[indexPath.row]
+        vc.modalPresentationStyle = .formSheet
+        self.present(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 50))
-        headerView.backgroundColor = .white
         
-        let textField = UITextField(frame: CGRect(x: 10, y: 10, width: headerView.frame.width - 20, height: 50))
-        textField.placeholder = "Search For Movies"
-        textField.backgroundColor = UIColor(white: 0.9, alpha: 1.0)
-        textField.layer.cornerRadius = 5
-        textField.layer.masksToBounds = true
-        textField.addTarget(self, action: #selector(searchTextChanged(_:)), for: .editingChanged)
-        headerView.addSubview(textField)
+        let mainView = UIView()
+        mainView.withHeight(100)
+        mainView.withWidth(self.view.frame.width - 20)
         
-        return headerView
+        mainView.addSubview(searchBar)
+        searchBar.fillSuperview(padding: UIEdgeInsets(top: 12, left: 8, bottom: 12, right: 8))
+        
+        return mainView
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row == filteredMovieList.count - 1 && !isLoadingMore {
             currentPage += 1
             isLoadingMore = true
-            provideMovieVm.getMovieList(forPage: currentPage) // Load next page
+            provideMovieVm.getMovieList(forPage: currentPage)
         }
     }
     
+
     @objc func searchTextChanged(_ sender: UITextField) {
         searchText = sender.text ?? ""
+        filterData()
+        tableView.reloadData()
+    }
+}
+
+extension MoviesListVc: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.searchText = searchBar.text ?? ""
+        filterData()
+        tableView.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.searchText = searchBar.text ?? ""
+        filterData()
+        tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchText = ""
+        currentPage = 1
         filterData()
         tableView.reloadData()
     }
@@ -123,7 +147,7 @@ extension MoviesListVc: MovieListDelegate {
     }
     
     func movieFailure(msg: String) {
-        
+        AlertHandler.showFailureAlert(vc: self, message: msg)
     }
 }
 

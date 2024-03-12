@@ -12,6 +12,7 @@ public class DomainFactory {
     private final var endpoint: EndPoint
     
     private var purchaseUc: PurchaseUc?
+    private var movieListUc: MovieListUc?
   
     
     init(endpoint: EndPoint) {
@@ -36,6 +37,10 @@ public class DomainFactory {
     }
     
     public func provideMovieListUc() -> MovieListUc {
-        return MovieListUc(movieListRepo: self.provideMovieListRepo())
+        if let movieListUc = movieListUc {
+            return movieListUc
+        }
+        movieListUc = MovieListUc(movieListRepo: self.provideMovieListRepo())
+        return movieListUc!
     }
 }

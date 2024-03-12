@@ -49,7 +49,7 @@ class PurchaseCell: UITableViewCell {
             itemInfo,
             spacing: 10.0,
             alignment: .leading
-        ).padLeft(10).padRight(10).padTop(10).padBottom(5)
+        ).padLeft(20).padRight(20).padTop(10).padBottom(5)
     }
 
 }

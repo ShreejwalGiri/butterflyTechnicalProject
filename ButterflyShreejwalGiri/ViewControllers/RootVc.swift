@@ -34,7 +34,7 @@ class RootVc: UIViewController {
         tableViewSetup()
     }
     
-    private func tableViewSetup() {
+    public func tableViewSetup() {
         tableView.separatorStyle = .none
         tableView.backgroundColor = .clear
     }

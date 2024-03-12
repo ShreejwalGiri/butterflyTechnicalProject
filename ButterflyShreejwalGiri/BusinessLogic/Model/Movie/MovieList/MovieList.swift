@@ -9,6 +9,7 @@ import HandyJSON
 
 public struct MovieList: HandyJSON {
     public var page: Int?
+    public var success: Bool = true
     public var results: [MovieResult]?
     public var total_pages: Int?
     public var total_results: Int?

@@ -30,7 +30,6 @@ class HomeVc: RootVc {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerClass(PurchaseCell.self)
-        tableView.registerClassHeaderFooter(TitleOnlyHeaderCell.self)
         purchaseListVm.delegate = self
         purchaseListVm.getPurchaseList()
     }
@@ -56,14 +55,6 @@ extension HomeVc: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PurchaseCell") as? PurchaseCell else { return UITableViewCell() }
         let items = self.purchaseList[indexPath.section].items?[indexPath.row]
         cell.configure(with: items ?? Items())
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: TitleOnlyHeaderCell.identifier) as! TitleOnlyHeaderCell
-        let title = self.purchaseList[section].customer
-        cell.titleLabel.text = self.purchaseList[section].customer
-        cell.lastUpdatedDate.text = self.purchaseList[section].created_at?.convertStringToDate()?.convertDateToString()
         return cell
     }
     

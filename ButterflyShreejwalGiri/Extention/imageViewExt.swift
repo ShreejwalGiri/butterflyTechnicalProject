@@ -13,10 +13,4 @@ public extension UIImageView {
         let url = URL(string: webPath)
         self.sd_setImage(with: url, placeholderImage: placeholder)
     }
-    
-    func setImageWithAnimation(image: UIImage?, duration: CGFloat = 0.3) {
-        UIView.transition(with: self, duration: duration, options: .transitionCrossDissolve, animations: {
-            self.image = image
-        })
-    }
 }

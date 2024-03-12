@@ -28,10 +28,10 @@ public class MovieListVm: BaseVm {
         self.movieListUc = movieListUc
     }
     
-    public func getMovieDetails() {
+    public func getMovieDetails(id movieId: Int) {
         self.loading.onNext(true)
         disposeBag.insert(
-            movieListUc.getMovieDetails().subscribe(onNext: { movieList in
+            movieListUc.getMovieDetails(id: movieId).subscribe(onNext: { movieList in
                 self.loading.onNext(false)
                 if movieList.success == false {
                     self.delegate?.movieDetails(data: movieList)
@@ -46,12 +46,12 @@ public class MovieListVm: BaseVm {
         )
     }
     
-    public func getMovieList(forPage page: Int) {
+    public func getMovieList(forPage page: Int, paginationEnable: Bool? = false) {
         self.loading.onNext(true)
         disposeBag.insert(
-            movieListUc.getMovieList().subscribe(onNext: { movieList in
+            movieListUc.getMovieList(orPage: page, paginationEnable: paginationEnable).subscribe(onNext: { movieList in
                 self.loading.onNext(false)
-                if !(movieList.results?.isEmpty ?? false) {
+                if movieList.success ?? false {
                     self.delegate?.movieList(data: movieList.results ?? [])
                 } else {
                     self.delegate?.movieFailure(msg: self.errorMsg)
