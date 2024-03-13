@@ -32,8 +32,8 @@ class MoviesListVc: RootVc {
         
         title = "Movie List"
         searchBar.placeholder = "Search Movies"
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
-        navigationItem.rightBarButtonItem = addButton
+//        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+//        navigationItem.rightBarButtonItem = addButton
         searchBar.delegate = self 
         tableView.delegate = self
         tableView.dataSource = self

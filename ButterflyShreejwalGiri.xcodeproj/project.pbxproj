@@ -32,10 +32,26 @@
 		80188C812B9C2F5C001630B2 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C802B9C2F5C001630B2 /* AppFactory.swift */; };
 		80188C832B9C2F86001630B2 /* VmFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C822B9C2F86001630B2 /* VmFactory.swift */; };
 		80188C882B9C7E30001630B2 /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C872B9C7E30001630B2 /* UITableViewExt.swift */; };
+		804E04AE2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804E04AD2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests.swift */; };
+		804E04BF2BA26B7400B7DA23 /* libAlamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04B42BA26B7400B7DA23 /* libAlamofire.a */; };
+		804E04C02BA26B7400B7DA23 /* libHandyJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04B52BA26B7400B7DA23 /* libHandyJSON.a */; };
+		804E04C12BA26B7400B7DA23 /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04B62BA26B7400B7DA23 /* libIQKeyboardManager.a */; };
+		804E04C22BA26B7400B7DA23 /* libLBTATools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04B72BA26B7400B7DA23 /* libLBTATools.a */; };
+		804E04C32BA26B7400B7DA23 /* libPods-ButterflyShreejwalGiri.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A751C2FD38BC5A4CEFB28D /* libPods-ButterflyShreejwalGiri.a */; };
+		804E04C42BA26B7400B7DA23 /* libPods-ButterflyShreejwalGiriTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04B82BA26B7400B7DA23 /* libPods-ButterflyShreejwalGiriTests.a */; };
+		804E04C52BA26B7400B7DA23 /* libReachabilitySwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04B92BA26B7400B7DA23 /* libReachabilitySwift.a */; };
+		804E04C62BA26B7400B7DA23 /* libRxAlamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04BA2BA26B7400B7DA23 /* libRxAlamofire.a */; };
+		804E04C72BA26B7400B7DA23 /* libRxCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04BB2BA26B7400B7DA23 /* libRxCocoa.a */; };
+		804E04C82BA26B7400B7DA23 /* libRxRelay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04BC2BA26B7400B7DA23 /* libRxRelay.a */; };
+		804E04C92BA26B7400B7DA23 /* libRxSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04BD2BA26B7400B7DA23 /* libRxSwift.a */; };
+		804E04CA2BA26B7400B7DA23 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804E04BE2BA26B7400B7DA23 /* libSDWebImage.a */; };
+		804E04EB2BA26E9400B7DA23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804E04EA2BA26E9400B7DA23 /* Assets.xcassets */; };
 		8077C7662B9D4FD40059E54F /* DateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077C7652B9D4FD40059E54F /* DateConfig.swift */; };
 		8077C76C2B9D54510059E54F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077C76B2B9D54510059E54F /* BaseCoordinator.swift */; };
 		8077C76F2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8077C76D2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodeld */; };
 		8082FD1B2BA1BBD200D8A73B /* MovieCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082FD1A2BA1BBD200D8A73B /* MovieCoordinator.swift */; };
+		8082FDD02BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082FDCF2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests.swift */; };
+		8082FDD22BA1EA1500D8A73B /* ButterflyShreejwalGiriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082FDD12BA1EA1500D8A73B /* ButterflyShreejwalGiriUITestsLaunchTests.swift */; };
 		8099160D2B9FC3A900A512EE /* MovieDetailsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099160C2B9FC3A900A512EE /* MovieDetailsVc.swift */; };
 		809916102B9FC7A000A512EE /* MovieDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099160F2B9FC7A000A512EE /* MovieDetailsCell.swift */; };
 		80A3D22D2BA025DB009D99DD /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A3D22C2BA025DB009D99DD /* UIViewExt.swift */; };
@@ -47,7 +63,6 @@
 		80AA249C2B99D7F4002F2961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA249B2B99D7F4002F2961 /* SceneDelegate.swift */; };
 		80AA249E2B99D7F4002F2961 /* RootVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA249D2B99D7F4002F2961 /* RootVc.swift */; };
 		80AA24A42B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24A22B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld */; };
-		80AA24A62B99D7F7002F2961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80AA24A52B99D7F7002F2961 /* Assets.xcassets */; };
 		80AA24A92B99D7F7002F2961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AA24A72B99D7F7002F2961 /* LaunchScreen.storyboard */; };
 		80E984EC2B9E70E90089EFEC /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E984EB2B9E70E90089EFEC /* MovieDetails.swift */; };
 		80E984EE2B9E71BE0089EFEC /* SpokenLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E984ED2B9E71BE0089EFEC /* SpokenLanguage.swift */; };
@@ -67,7 +82,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8082FDC42BA1E64200D8A73B /* PBXContainerItemProxy */ = {
+		804E04AF2BA26A7900B7DA23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80AA248E2B99D7F4002F2961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80AA24952B99D7F4002F2961;
+			remoteInfo = ButterflyShreejwalGiri;
+		};
+		8082FDD32BA1EA1500D8A73B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 80AA248E2B99D7F4002F2961 /* Project object */;
 			proxyType = 1;
@@ -106,6 +128,21 @@
 		80188C802B9C2F5C001630B2 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
 		80188C822B9C2F86001630B2 /* VmFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VmFactory.swift; sourceTree = "<group>"; };
 		80188C872B9C7E30001630B2 /* UITableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExt.swift; sourceTree = "<group>"; };
+		804E04A62BA2645B00B7DA23 /* ButterflyShreejwalGiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterflyShreejwalGiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04AB2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyShreejwalGiriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04AD2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyShreejwalGiriTests.swift; sourceTree = "<group>"; };
+		804E04B42BA26B7400B7DA23 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04B52BA26B7400B7DA23 /* libHandyJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHandyJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04B62BA26B7400B7DA23 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04B72BA26B7400B7DA23 /* libLBTATools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libLBTATools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04B82BA26B7400B7DA23 /* libPods-ButterflyShreejwalGiriTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-ButterflyShreejwalGiriTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04B92BA26B7400B7DA23 /* libReachabilitySwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReachabilitySwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04BA2BA26B7400B7DA23 /* libRxAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04BB2BA26B7400B7DA23 /* libRxCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04BC2BA26B7400B7DA23 /* libRxRelay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxRelay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04BD2BA26B7400B7DA23 /* libRxSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04BE2BA26B7400B7DA23 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		804E04EA2BA26E9400B7DA23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		8077C7652B9D4FD40059E54F /* DateConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConfig.swift; sourceTree = "<group>"; };
 		8077C76B2B9D54510059E54F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		8077C76E2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PurchaseOrderList.xcdatamodel; sourceTree = "<group>"; };
@@ -130,8 +167,9 @@
 		8082FD492BA1DCD500D8A73B /* libRxRelay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxRelay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8082FD4A2BA1DCD500D8A73B /* libRxSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8082FD4B2BA1DCD500D8A73B /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8082FD792BA1E48F00D8A73B /* ButterflyShreejwalGiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ButterflyShreejwalGiri.app; path = "/Users/shreejwalgiri/Documents/ButterflyShreejwalGiri/build/Debug-iphoneos/ButterflyShreejwalGiri.app"; sourceTree = "<absolute>"; };
-		8082FDBE2BA1E64200D8A73B /* MovieUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MovieUITest.xctest; path = "/Users/shreejwalgiri/Documents/ButterflyShreejwalGiri/build/Debug-iphoneos/MovieUITest.xctest"; sourceTree = "<absolute>"; };
+		8082FDCD2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyShreejwalGiriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FDCF2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyShreejwalGiriUITests.swift; sourceTree = "<group>"; };
+		8082FDD12BA1EA1500D8A73B /* ButterflyShreejwalGiriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyShreejwalGiriUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8099160C2B9FC3A900A512EE /* MovieDetailsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsVc.swift; sourceTree = "<group>"; };
 		8099160F2B9FC7A000A512EE /* MovieDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCell.swift; sourceTree = "<group>"; };
 		80A3D22C2BA025DB009D99DD /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -143,7 +181,6 @@
 		80AA249B2B99D7F4002F2961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		80AA249D2B99D7F4002F2961 /* RootVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVc.swift; sourceTree = "<group>"; };
 		80AA24A32B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ButterflyShreejwalGiri.xcdatamodel; sourceTree = "<group>"; };
-		80AA24A52B99D7F7002F2961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80AA24A82B99D7F7002F2961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80AA24AA2B99D7F7002F2961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80E984EB2B9E70E90089EFEC /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
@@ -167,7 +204,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8082FDBB2BA1E64200D8A73B /* Frameworks */ = {
+		804E04A82BA26A7900B7DA23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804E04C62BA26B7400B7DA23 /* libRxAlamofire.a in Frameworks */,
+				804E04CA2BA26B7400B7DA23 /* libSDWebImage.a in Frameworks */,
+				804E04C42BA26B7400B7DA23 /* libPods-ButterflyShreejwalGiriTests.a in Frameworks */,
+				804E04C52BA26B7400B7DA23 /* libReachabilitySwift.a in Frameworks */,
+				804E04C82BA26B7400B7DA23 /* libRxRelay.a in Frameworks */,
+				804E04C92BA26B7400B7DA23 /* libRxSwift.a in Frameworks */,
+				804E04C22BA26B7400B7DA23 /* libLBTATools.a in Frameworks */,
+				804E04C72BA26B7400B7DA23 /* libRxCocoa.a in Frameworks */,
+				804E04C12BA26B7400B7DA23 /* libIQKeyboardManager.a in Frameworks */,
+				804E04C32BA26B7400B7DA23 /* libPods-ButterflyShreejwalGiri.a in Frameworks */,
+				804E04C02BA26B7400B7DA23 /* libHandyJSON.a in Frameworks */,
+				804E04BF2BA26B7400B7DA23 /* libAlamofire.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8082FDCA2BA1EA1500D8A73B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,6 +244,17 @@
 		66EC18F300E6B6A530E2647D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				804E04B42BA26B7400B7DA23 /* libAlamofire.a */,
+				804E04B52BA26B7400B7DA23 /* libHandyJSON.a */,
+				804E04B62BA26B7400B7DA23 /* libIQKeyboardManager.a */,
+				804E04B72BA26B7400B7DA23 /* libLBTATools.a */,
+				804E04B82BA26B7400B7DA23 /* libPods-ButterflyShreejwalGiriTests.a */,
+				804E04B92BA26B7400B7DA23 /* libReachabilitySwift.a */,
+				804E04BA2BA26B7400B7DA23 /* libRxAlamofire.a */,
+				804E04BB2BA26B7400B7DA23 /* libRxCocoa.a */,
+				804E04BC2BA26B7400B7DA23 /* libRxRelay.a */,
+				804E04BD2BA26B7400B7DA23 /* libRxSwift.a */,
+				804E04BE2BA26B7400B7DA23 /* libSDWebImage.a */,
 				8082FD412BA1DCD500D8A73B /* libAlamofire.a */,
 				8082FD422BA1DCD500D8A73B /* libHandyJSON.a */,
 				8082FD432BA1DCD500D8A73B /* libIQKeyboardManager.a */,
@@ -403,6 +470,14 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		804E04AC2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests */ = {
+			isa = PBXGroup;
+			children = (
+				804E04AD2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests.swift */,
+			);
+			path = ButterflyShreejwalGiriTests;
+			sourceTree = "<group>";
+		};
 		8077C7702B9D8AD30059E54F /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +491,15 @@
 				8082FD1A2BA1BBD200D8A73B /* MovieCoordinator.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		8082FDCE2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8082FDCF2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests.swift */,
+				8082FDD12BA1EA1500D8A73B /* ButterflyShreejwalGiriUITestsLaunchTests.swift */,
+			);
+			path = ButterflyShreejwalGiriUITests;
 			sourceTree = "<group>";
 		};
 		8099160A2B9FC38D00A512EE /* MovieDetails */ = {
@@ -465,13 +549,19 @@
 			children = (
 				80AA24982B99D7F4002F2961 /* ButterflyShreejwalGiri */,
 				CFADB45C3FFFB2332A03D1E7 /* Pods */,
+				8082FDCE2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests */,
+				804E04AC2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests */,
 				66EC18F300E6B6A530E2647D /* Frameworks */,
+				8082FDCD2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests.xctest */,
+				804E04A62BA2645B00B7DA23 /* ButterflyShreejwalGiri.app */,
+				804E04AB2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		80AA24982B99D7F4002F2961 /* ButterflyShreejwalGiri */ = {
 			isa = PBXGroup;
 			children = (
+				804E04EA2BA26E9400B7DA23 /* Assets.xcassets */,
 				80A3D2362BA029AB009D99DD /* Handler */,
 				80A3D2302BA02833009D99DD /* Theme */,
 				8077C7702B9D8AD30059E54F /* CoreData */,
@@ -487,7 +577,6 @@
 				80188C2B2B9ADE8A001630B2 /* BusinessLogic */,
 				80AA24992B99D7F4002F2961 /* AppDelegate.swift */,
 				80AA249B2B99D7F4002F2961 /* SceneDelegate.swift */,
-				80AA24A52B99D7F7002F2961 /* Assets.xcassets */,
 				80AA24A72B99D7F7002F2961 /* LaunchScreen.storyboard */,
 				80AA24AA2B99D7F7002F2961 /* Info.plist */,
 				80AA24A22B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld */,
@@ -607,22 +696,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8082FDBD2BA1E64200D8A73B /* MovieUITest */ = {
+		804E04AA2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8082FDC62BA1E64300D8A73B /* Build configuration list for PBXNativeTarget "MovieUITest" */;
+			buildConfigurationList = 804E04B32BA26A7900B7DA23 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriTests" */;
 			buildPhases = (
-				8082FDBA2BA1E64200D8A73B /* Sources */,
-				8082FDBB2BA1E64200D8A73B /* Frameworks */,
-				8082FDBC2BA1E64200D8A73B /* Resources */,
+				804E04A72BA26A7900B7DA23 /* Sources */,
+				804E04A82BA26A7900B7DA23 /* Frameworks */,
+				804E04A92BA26A7900B7DA23 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8082FDC52BA1E64200D8A73B /* PBXTargetDependency */,
+				804E04B02BA26A7900B7DA23 /* PBXTargetDependency */,
 			);
-			name = MovieUITest;
-			productName = MovieUITest;
-			productReference = 8082FDBE2BA1E64200D8A73B /* MovieUITest.xctest */;
+			name = ButterflyShreejwalGiriTests;
+			productName = ButterflyShreejwalGiriTests;
+			productReference = 804E04AB2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8082FDCC2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8082FDD52BA1EA1500D8A73B /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriUITests" */;
+			buildPhases = (
+				8082FDC92BA1EA1500D8A73B /* Sources */,
+				8082FDCA2BA1EA1500D8A73B /* Frameworks */,
+				8082FDCB2BA1EA1500D8A73B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8082FDD42BA1EA1500D8A73B /* PBXTargetDependency */,
+			);
+			name = ButterflyShreejwalGiriUITests;
+			productName = ButterflyShreejwalGiriUITests;
+			productReference = 8082FDCD2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */ = {
@@ -641,7 +748,7 @@
 			);
 			name = ButterflyShreejwalGiri;
 			productName = ButterflyShreejwalGiri;
-			productReference = 8082FD792BA1E48F00D8A73B /* ButterflyShreejwalGiri.app */;
+			productReference = 804E04A62BA2645B00B7DA23 /* ButterflyShreejwalGiri.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -654,7 +761,11 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					8082FDBD2BA1E64200D8A73B = {
+					804E04AA2BA26A7900B7DA23 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 80AA24952B99D7F4002F2961;
+					};
+					8082FDCC2BA1EA1500D8A73B = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 80AA24952B99D7F4002F2961;
 					};
@@ -677,13 +788,21 @@
 			projectRoot = "";
 			targets = (
 				80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */,
-				8082FDBD2BA1E64200D8A73B /* MovieUITest */,
+				8082FDCC2BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests */,
+				804E04AA2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8082FDBC2BA1E64200D8A73B /* Resources */ = {
+		804E04A92BA26A7900B7DA23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8082FDCB2BA1EA1500D8A73B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -694,8 +813,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804E04EB2BA26E9400B7DA23 /* Assets.xcassets in Resources */,
 				80AA24A92B99D7F7002F2961 /* LaunchScreen.storyboard in Resources */,
-				80AA24A62B99D7F7002F2961 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,10 +863,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8082FDBA2BA1E64200D8A73B /* Sources */ = {
+		804E04A72BA26A7900B7DA23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804E04AE2BA26A7900B7DA23 /* ButterflyShreejwalGiriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8082FDC92BA1EA1500D8A73B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8082FDD02BA1EA1500D8A73B /* ButterflyShreejwalGiriUITests.swift in Sources */,
+				8082FDD22BA1EA1500D8A73B /* ButterflyShreejwalGiriUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,10 +944,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8082FDC52BA1E64200D8A73B /* PBXTargetDependency */ = {
+		804E04B02BA26A7900B7DA23 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */;
-			targetProxy = 8082FDC42BA1E64200D8A73B /* PBXContainerItemProxy */;
+			targetProxy = 804E04AF2BA26A7900B7DA23 /* PBXContainerItemProxy */;
+		};
+		8082FDD42BA1EA1500D8A73B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */;
+			targetProxy = 8082FDD32BA1EA1500D8A73B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -834,15 +968,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8082FDC72BA1E64300D8A73B /* Debug */ = {
+		804E04B12BA26A7900B7DA23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8NSK6X7SHY;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.MovieUITest;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflyShreejwalGiri.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButterflyShreejwalGiri";
+			};
+			name = Debug;
+		};
+		804E04B22BA26A7900B7DA23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NSK6X7SHY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflyShreejwalGiri.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButterflyShreejwalGiri";
+			};
+			name = Release;
+		};
+		8082FDD62BA1EA1500D8A73B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NJ4S3KMLL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -851,15 +1021,15 @@
 			};
 			name = Debug;
 		};
-		8082FDC82BA1E64300D8A73B /* Release */ = {
+		8082FDD72BA1EA1500D8A73B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8NSK6X7SHY;
+				DEVELOPMENT_TEAM = 8NJ4S3KMLL;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.MovieUITest;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1054,11 +1224,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8082FDC62BA1E64300D8A73B /* Build configuration list for PBXNativeTarget "MovieUITest" */ = {
+		804E04B32BA26A7900B7DA23 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8082FDC72BA1E64300D8A73B /* Debug */,
-				8082FDC82BA1E64300D8A73B /* Release */,
+				804E04B12BA26A7900B7DA23 /* Debug */,
+				804E04B22BA26A7900B7DA23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8082FDD52BA1EA1500D8A73B /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8082FDD62BA1EA1500D8A73B /* Debug */,
+				8082FDD72BA1EA1500D8A73B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
