@@ -15,7 +15,8 @@
 
 ### Step 3: Install Pods
 - Once you're in the project folder in Terminal, type the following command to install pods:
-
+```bash
+pod install
 
 ### Step 4: Build and Run
 - After installing pods, you can now build and run the project in Xcode.
