@@ -33,5 +33,27 @@ open class AlertHandler {
         alertController.addAction(okAction)
         vc?.present(alertController, animated: true, completion: nil)
     }
+    
+    public static func showInfoAlert(
+        vc: UIViewController?,
+        title: String,
+        message: String,
+        buttonOneTitle: String? = "Ok",
+        completionBtnOne: (() -> Void)? = nil,
+        onCompletion: (() -> Void)? = nil
+    ) {
+        AlertHandler.provideHapticFeedback(style: .medium)
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let btnOne = UIAlertAction(title: buttonOneTitle, style: .default) { action in
+            if let completion = completionBtnOne {
+                completion()
+            }
+        }
+        btnOne.setValue(ColorConfig.baseConfig.defaultWhite, forKey: "titleTextColor")
+        alertController.addAction(btnOne)
+        vc?.present(alertController, animated: true, completion: {
+            onCompletion?()
+        })
+    }
 }
 

@@ -7,10 +7,10 @@
 
 import Foundation
 import UIKit
-
+import Reachability
 class MoviesListVc: RootVc {
     
-    public var navigationDelegate: BaseCoordinator?
+    public var navigationDelegate: MovieCoordinatorDelegate?
     final let provideMovieVm = AppFactory.initialize().provideVmFactory().provideMovieVm()
     
     private var movieList = [MovieResult]()
@@ -39,13 +39,11 @@ class MoviesListVc: RootVc {
         tableView.dataSource = self
         tableView.registerClass(MovieListCell.self)
         provideMovieVm.delegate = self
+        observe(loading: self.provideMovieVm.loading)
         provideMovieVm.getMovieList(forPage: 1, paginationEnable: true)
     }
     
     @objc func addButtonTapped() {
-        
-        let vc = AddPurchaseVc()
-        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func filterData() {
@@ -76,10 +74,9 @@ extension MoviesListVc: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = MovieDetailsVc()
-        vc.selectedMovieList = self.filteredMovieList[indexPath.row]
-        vc.modalPresentationStyle = .formSheet
-        self.present(vc, animated: true)
+        
+        let selectedData = self.filteredMovieList[indexPath.row]
+        self.navigationDelegate?.openMovieDetailView(selectedData: selectedData)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

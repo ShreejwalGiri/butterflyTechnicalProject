@@ -8,16 +8,13 @@
 import Foundation
 import RxSwift
 
-
 public protocol Coordinator {
-    func start()
-    func purchaseDetailsView(item: Items)
+    func rootView() -> UIViewController
     func popBack(to viewController: AnyClass)
 }
 
-class BaseCoordinator: Coordinator {
+open class BaseCoordinator: Coordinator {
   
-    
     public var childCoordinators = [Coordinator]()
     public var navigationController: UINavigationController
 
@@ -27,16 +24,11 @@ class BaseCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
-    func start() {
-        
+    public func rootView() -> UIViewController {
+        return UIViewController() 
     }
     
-    func purchaseDetailsView(item: Items) {
-        let vc = DetailsVc()
-        self.navigationController.pushViewController(vc, animated: true)
-    }
-    
-    func popBack(to viewController: AnyClass) {
+    public func popBack(to viewController: AnyClass) {
         self.navigationController.popViewController(animated: true)
     }
 }

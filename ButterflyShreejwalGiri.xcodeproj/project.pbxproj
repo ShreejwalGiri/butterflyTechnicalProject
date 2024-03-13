@@ -14,10 +14,8 @@
 		80188C472B9BEF70001630B2 /* StoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C462B9BEF70001630B2 /* StoreData.swift */; };
 		80188C4A2B9BEFF1001630B2 /* UserDefaultConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C492B9BEFF1001630B2 /* UserDefaultConstants.swift */; };
 		80188C4E2B9BF687001630B2 /* ParamsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C4D2B9BF687001630B2 /* ParamsConstant.swift */; };
-		80188C512B9BF896001630B2 /* DefaultToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C502B9BF896001630B2 /* DefaultToolBar.swift */; };
 		80188C562B9BF921001630B2 /* ImageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C552B9BF921001630B2 /* ImageConfig.swift */; };
 		80188C5B2B9BF992001630B2 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C5A2B9BF992001630B2 /* StringExt.swift */; };
-		80188C5E2B9BFE7A001630B2 /* HomeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C5D2B9BFE7A001630B2 /* HomeVc.swift */; };
 		80188C602B9C250D001630B2 /* PurchaseRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C5F2B9C250D001630B2 /* PurchaseRepo.swift */; };
 		80188C632B9C2577001630B2 /* CustomTypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C622B9C2577001630B2 /* CustomTypeAlias.swift */; };
 		80188C662B9C25B0001630B2 /* PurchaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C652B9C25B0001630B2 /* PurchaseModel.swift */; };
@@ -33,13 +31,11 @@
 		80188C7F2B9C2EFD001630B2 /* DomainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C7E2B9C2EFD001630B2 /* DomainFactory.swift */; };
 		80188C812B9C2F5C001630B2 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C802B9C2F5C001630B2 /* AppFactory.swift */; };
 		80188C832B9C2F86001630B2 /* VmFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C822B9C2F86001630B2 /* VmFactory.swift */; };
-		80188C862B9C7CC6001630B2 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C852B9C7CC6001630B2 /* PurchaseCell.swift */; };
 		80188C882B9C7E30001630B2 /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80188C872B9C7E30001630B2 /* UITableViewExt.swift */; };
 		8077C7662B9D4FD40059E54F /* DateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077C7652B9D4FD40059E54F /* DateConfig.swift */; };
-		8077C7692B9D53F70059E54F /* DetailsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077C7682B9D53F70059E54F /* DetailsVc.swift */; };
 		8077C76C2B9D54510059E54F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077C76B2B9D54510059E54F /* BaseCoordinator.swift */; };
 		8077C76F2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8077C76D2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodeld */; };
-		8077C7752B9D8D030059E54F /* AddPurchaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077C7742B9D8D030059E54F /* AddPurchaseVc.swift */; };
+		8082FD1B2BA1BBD200D8A73B /* MovieCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082FD1A2BA1BBD200D8A73B /* MovieCoordinator.swift */; };
 		8099160D2B9FC3A900A512EE /* MovieDetailsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099160C2B9FC3A900A512EE /* MovieDetailsVc.swift */; };
 		809916102B9FC7A000A512EE /* MovieDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099160F2B9FC7A000A512EE /* MovieDetailsCell.swift */; };
 		80A3D22D2BA025DB009D99DD /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A3D22C2BA025DB009D99DD /* UIViewExt.swift */; };
@@ -53,10 +49,6 @@
 		80AA24A42B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24A22B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld */; };
 		80AA24A62B99D7F7002F2961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80AA24A52B99D7F7002F2961 /* Assets.xcassets */; };
 		80AA24A92B99D7F7002F2961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AA24A72B99D7F7002F2961 /* LaunchScreen.storyboard */; };
-		80AA24B42B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24B32B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift */; };
-		80AA24BE2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24BD2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift */; };
-		80AA24C02B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AA24BF2B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift */; };
-		80E984E92B9DE0B70089EFEC /* AddItemVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E984E82B9DE0B70089EFEC /* AddItemVc.swift */; };
 		80E984EC2B9E70E90089EFEC /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E984EB2B9E70E90089EFEC /* MovieDetails.swift */; };
 		80E984EE2B9E71BE0089EFEC /* SpokenLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E984ED2B9E71BE0089EFEC /* SpokenLanguage.swift */; };
 		80E984F02B9E71D70089EFEC /* ProductionCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E984EF2B9E71D70089EFEC /* ProductionCountry.swift */; };
@@ -75,14 +67,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		80AA24B02B99D7F8002F2961 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80AA248E2B99D7F4002F2961 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 80AA24952B99D7F4002F2961;
-			remoteInfo = ButterflyShreejwalGiri;
-		};
-		80AA24BA2B99D7F8002F2961 /* PBXContainerItemProxy */ = {
+		8082FDC42BA1E64200D8A73B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 80AA248E2B99D7F4002F2961 /* Project object */;
 			proxyType = 1;
@@ -92,7 +77,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E85E0657273EB06218254D /* libPods-ButterflyShreejwalGiriTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ButterflyShreejwalGiriTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A751C2FD38BC5A4CEFB28D /* libPods-ButterflyShreejwalGiri.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ButterflyShreejwalGiri.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11DF8AD0F9C7872CBAE69A85 /* Pods-ButterflyShreejwalGiriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyShreejwalGiriTests.release.xcconfig"; path = "Target Support Files/Pods-ButterflyShreejwalGiriTests/Pods-ButterflyShreejwalGiriTests.release.xcconfig"; sourceTree = "<group>"; };
+		2866CE62B2A3B004721DD546 /* Pods-ButterflyShreejwalGiriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyShreejwalGiriTests.debug.xcconfig"; path = "Target Support Files/Pods-ButterflyShreejwalGiriTests/Pods-ButterflyShreejwalGiriTests.debug.xcconfig"; sourceTree = "<group>"; };
 		80188C3B2B9AE2CF001630B2 /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
 		80188C3F2B9BEBD2001630B2 /* ServiceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceName.swift; sourceTree = "<group>"; };
 		80188C412B9BED5B001630B2 /* ApiServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceRouter.swift; sourceTree = "<group>"; };
@@ -100,10 +88,8 @@
 		80188C462B9BEF70001630B2 /* StoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreData.swift; sourceTree = "<group>"; };
 		80188C492B9BEFF1001630B2 /* UserDefaultConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultConstants.swift; sourceTree = "<group>"; };
 		80188C4D2B9BF687001630B2 /* ParamsConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamsConstant.swift; sourceTree = "<group>"; };
-		80188C502B9BF896001630B2 /* DefaultToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultToolBar.swift; sourceTree = "<group>"; };
 		80188C552B9BF921001630B2 /* ImageConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConfig.swift; sourceTree = "<group>"; };
 		80188C5A2B9BF992001630B2 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
-		80188C5D2B9BFE7A001630B2 /* HomeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVc.swift; sourceTree = "<group>"; };
 		80188C5F2B9C250D001630B2 /* PurchaseRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseRepo.swift; sourceTree = "<group>"; };
 		80188C622B9C2577001630B2 /* CustomTypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTypeAlias.swift; sourceTree = "<group>"; };
 		80188C652B9C25B0001630B2 /* PurchaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseModel.swift; sourceTree = "<group>"; };
@@ -119,13 +105,33 @@
 		80188C7E2B9C2EFD001630B2 /* DomainFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainFactory.swift; sourceTree = "<group>"; };
 		80188C802B9C2F5C001630B2 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
 		80188C822B9C2F86001630B2 /* VmFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VmFactory.swift; sourceTree = "<group>"; };
-		80188C852B9C7CC6001630B2 /* PurchaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
 		80188C872B9C7E30001630B2 /* UITableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExt.swift; sourceTree = "<group>"; };
 		8077C7652B9D4FD40059E54F /* DateConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConfig.swift; sourceTree = "<group>"; };
-		8077C7682B9D53F70059E54F /* DetailsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVc.swift; sourceTree = "<group>"; };
 		8077C76B2B9D54510059E54F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		8077C76E2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PurchaseOrderList.xcdatamodel; sourceTree = "<group>"; };
-		8077C7742B9D8D030059E54F /* AddPurchaseVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurchaseVc.swift; sourceTree = "<group>"; };
+		8082FD1A2BA1BBD200D8A73B /* MovieCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCoordinator.swift; sourceTree = "<group>"; };
+		8082FD2B2BA1DC3D00D8A73B /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD2C2BA1DC3D00D8A73B /* libHandyJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHandyJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD2D2BA1DC3D00D8A73B /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD2E2BA1DC3D00D8A73B /* libLBTATools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libLBTATools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD302BA1DC3D00D8A73B /* libReachabilitySwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReachabilitySwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD312BA1DC3D00D8A73B /* libRxAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD322BA1DC3D00D8A73B /* libRxCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD332BA1DC3D00D8A73B /* libRxRelay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxRelay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD342BA1DC3D00D8A73B /* libRxSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD352BA1DC3D00D8A73B /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD412BA1DCD500D8A73B /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD422BA1DCD500D8A73B /* libHandyJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHandyJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD432BA1DCD500D8A73B /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD442BA1DCD500D8A73B /* libLBTATools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libLBTATools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD462BA1DCD500D8A73B /* libReachabilitySwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReachabilitySwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD472BA1DCD500D8A73B /* libRxAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD482BA1DCD500D8A73B /* libRxCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD492BA1DCD500D8A73B /* libRxRelay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxRelay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD4A2BA1DCD500D8A73B /* libRxSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRxSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD4B2BA1DCD500D8A73B /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8082FD792BA1E48F00D8A73B /* ButterflyShreejwalGiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ButterflyShreejwalGiri.app; path = "/Users/shreejwalgiri/Documents/ButterflyShreejwalGiri/build/Debug-iphoneos/ButterflyShreejwalGiri.app"; sourceTree = "<absolute>"; };
+		8082FDBE2BA1E64200D8A73B /* MovieUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MovieUITest.xctest; path = "/Users/shreejwalgiri/Documents/ButterflyShreejwalGiri/build/Debug-iphoneos/MovieUITest.xctest"; sourceTree = "<absolute>"; };
 		8099160C2B9FC3A900A512EE /* MovieDetailsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsVc.swift; sourceTree = "<group>"; };
 		8099160F2B9FC7A000A512EE /* MovieDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsCell.swift; sourceTree = "<group>"; };
 		80A3D22C2BA025DB009D99DD /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -133,7 +139,6 @@
 		80A3D2312BA0283D009D99DD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		80A3D2342BA0284B009D99DD /* LabelTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTheme.swift; sourceTree = "<group>"; };
 		80A3D2372BA029B4009D99DD /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
-		80AA24962B99D7F4002F2961 /* ButterflyShreejwalGiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterflyShreejwalGiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80AA24992B99D7F4002F2961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80AA249B2B99D7F4002F2961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		80AA249D2B99D7F4002F2961 /* RootVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVc.swift; sourceTree = "<group>"; };
@@ -141,12 +146,6 @@
 		80AA24A52B99D7F7002F2961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80AA24A82B99D7F7002F2961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80AA24AA2B99D7F7002F2961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80AA24AF2B99D7F8002F2961 /* ButterflyShreejwalGiriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyShreejwalGiriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		80AA24B32B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyShreejwalGiriTests.swift; sourceTree = "<group>"; };
-		80AA24B92B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyShreejwalGiriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		80AA24BD2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyShreejwalGiriUITests.swift; sourceTree = "<group>"; };
-		80AA24BF2B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyShreejwalGiriUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		80E984E82B9DE0B70089EFEC /* AddItemVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemVc.swift; sourceTree = "<group>"; };
 		80E984EB2B9E70E90089EFEC /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		80E984ED2B9E71BE0089EFEC /* SpokenLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenLanguage.swift; sourceTree = "<group>"; };
 		80E984EF2B9E71D70089EFEC /* ProductionCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionCountry.swift; sourceTree = "<group>"; };
@@ -162,29 +161,24 @@
 		80E9850D2B9EAE4E0089EFEC /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		80E9850F2B9ECCEC0089EFEC /* imageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewExt.swift; sourceTree = "<group>"; };
 		A4CBCBFF041977704EA34712 /* Pods-ButterflyShreejwalGiri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyShreejwalGiri.release.xcconfig"; path = "Target Support Files/Pods-ButterflyShreejwalGiri/Pods-ButterflyShreejwalGiri.release.xcconfig"; sourceTree = "<group>"; };
+		D616A5EF4A5E7BC3AF7ECB00 /* Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests.debug.xcconfig"; path = "Target Support Files/Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests/Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2B6168F766B9D4EE4A1D8FB /* Pods-ButterflyShreejwalGiri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyShreejwalGiri.debug.xcconfig"; path = "Target Support Files/Pods-ButterflyShreejwalGiri/Pods-ButterflyShreejwalGiri.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F0DF5521F5143F0C36CFBF /* Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests.release.xcconfig"; path = "Target Support Files/Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests/Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8082FDBB2BA1E64200D8A73B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80AA24932B99D7F4002F2961 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D37C5A6A87611EBA701A83D5 /* libPods-ButterflyShreejwalGiri.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80AA24AC2B99D7F8002F2961 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80AA24B62B99D7F8002F2961 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +188,28 @@
 		66EC18F300E6B6A530E2647D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8082FD412BA1DCD500D8A73B /* libAlamofire.a */,
+				8082FD422BA1DCD500D8A73B /* libHandyJSON.a */,
+				8082FD432BA1DCD500D8A73B /* libIQKeyboardManager.a */,
+				8082FD442BA1DCD500D8A73B /* libLBTATools.a */,
+				8082FD462BA1DCD500D8A73B /* libReachabilitySwift.a */,
+				8082FD472BA1DCD500D8A73B /* libRxAlamofire.a */,
+				8082FD482BA1DCD500D8A73B /* libRxCocoa.a */,
+				8082FD492BA1DCD500D8A73B /* libRxRelay.a */,
+				8082FD4A2BA1DCD500D8A73B /* libRxSwift.a */,
+				8082FD4B2BA1DCD500D8A73B /* libSDWebImage.a */,
+				8082FD2B2BA1DC3D00D8A73B /* libAlamofire.a */,
+				8082FD2C2BA1DC3D00D8A73B /* libHandyJSON.a */,
+				8082FD2D2BA1DC3D00D8A73B /* libIQKeyboardManager.a */,
+				8082FD2E2BA1DC3D00D8A73B /* libLBTATools.a */,
+				8082FD302BA1DC3D00D8A73B /* libReachabilitySwift.a */,
+				8082FD312BA1DC3D00D8A73B /* libRxAlamofire.a */,
+				8082FD322BA1DC3D00D8A73B /* libRxCocoa.a */,
+				8082FD332BA1DC3D00D8A73B /* libRxRelay.a */,
+				8082FD342BA1DC3D00D8A73B /* libRxSwift.a */,
+				8082FD352BA1DC3D00D8A73B /* libSDWebImage.a */,
 				03A751C2FD38BC5A4CEFB28D /* libPods-ButterflyShreejwalGiri.a */,
+				02E85E0657273EB06218254D /* libPods-ButterflyShreejwalGiriTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -265,10 +280,6 @@
 			isa = PBXGroup;
 			children = (
 				80E985032B9E77EF0089EFEC /* Movies */,
-				8077C7732B9D8CF30059E54F /* AddPurchase */,
-				8077C7672B9D53EC0059E54F /* Details */,
-				80188C5C2B9BFE70001630B2 /* Home */,
-				80188C4F2B9BF88B001630B2 /* CommonViews */,
 				80AA249D2B99D7F4002F2961 /* RootVc.swift */,
 			);
 			path = ViewControllers;
@@ -303,6 +314,7 @@
 		80188C3D2B9AE2D7001630B2 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				8082FD192BA1BBC700D8A73B /* Movie */,
 				8077C76B2B9D54510059E54F /* BaseCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -325,14 +337,6 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		80188C4F2B9BF88B001630B2 /* CommonViews */ = {
-			isa = PBXGroup;
-			children = (
-				80188C502B9BF896001630B2 /* DefaultToolBar.swift */,
-			);
-			path = CommonViews;
-			sourceTree = "<group>";
-		};
 		80188C542B9BF915001630B2 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,15 +357,6 @@
 				80A3D22C2BA025DB009D99DD /* UIViewExt.swift */,
 			);
 			path = Extention;
-			sourceTree = "<group>";
-		};
-		80188C5C2B9BFE70001630B2 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				80188C842B9C7CA2001630B2 /* TableCell */,
-				80188C5D2B9BFE7A001630B2 /* HomeVc.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		80188C612B9C2552001630B2 /* CustomTypeAlias */ = {
@@ -408,22 +403,6 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		80188C842B9C7CA2001630B2 /* TableCell */ = {
-			isa = PBXGroup;
-			children = (
-				80188C852B9C7CC6001630B2 /* PurchaseCell.swift */,
-			);
-			path = TableCell;
-			sourceTree = "<group>";
-		};
-		8077C7672B9D53EC0059E54F /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				8077C7682B9D53F70059E54F /* DetailsVc.swift */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
 		8077C7702B9D8AD30059E54F /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,13 +410,12 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		8077C7732B9D8CF30059E54F /* AddPurchase */ = {
+		8082FD192BA1BBC700D8A73B /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				8077C7742B9D8D030059E54F /* AddPurchaseVc.swift */,
-				80E984E82B9DE0B70089EFEC /* AddItemVc.swift */,
+				8082FD1A2BA1BBD200D8A73B /* MovieCoordinator.swift */,
 			);
-			path = AddPurchase;
+			path = Movie;
 			sourceTree = "<group>";
 		};
 		8099160A2B9FC38D00A512EE /* MovieDetails */ = {
@@ -486,22 +464,9 @@
 			isa = PBXGroup;
 			children = (
 				80AA24982B99D7F4002F2961 /* ButterflyShreejwalGiri */,
-				80AA24B22B99D7F8002F2961 /* ButterflyShreejwalGiriTests */,
-				80AA24BC2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests */,
-				80AA24972B99D7F4002F2961 /* Products */,
 				CFADB45C3FFFB2332A03D1E7 /* Pods */,
 				66EC18F300E6B6A530E2647D /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		80AA24972B99D7F4002F2961 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				80AA24962B99D7F4002F2961 /* ButterflyShreejwalGiri.app */,
-				80AA24AF2B99D7F8002F2961 /* ButterflyShreejwalGiriTests.xctest */,
-				80AA24B92B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		80AA24982B99D7F4002F2961 /* ButterflyShreejwalGiri */ = {
@@ -528,23 +493,6 @@
 				80AA24A22B99D7F4002F2961 /* ButterflyShreejwalGiri.xcdatamodeld */,
 			);
 			path = ButterflyShreejwalGiri;
-			sourceTree = "<group>";
-		};
-		80AA24B22B99D7F8002F2961 /* ButterflyShreejwalGiriTests */ = {
-			isa = PBXGroup;
-			children = (
-				80AA24B32B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift */,
-			);
-			path = ButterflyShreejwalGiriTests;
-			sourceTree = "<group>";
-		};
-		80AA24BC2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests */ = {
-			isa = PBXGroup;
-			children = (
-				80AA24BD2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift */,
-				80AA24BF2B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift */,
-			);
-			path = ButterflyShreejwalGiriUITests;
 			sourceTree = "<group>";
 		};
 		80E984EA2B9E70DD0089EFEC /* Movie */ = {
@@ -648,6 +596,10 @@
 			children = (
 				E2B6168F766B9D4EE4A1D8FB /* Pods-ButterflyShreejwalGiri.debug.xcconfig */,
 				A4CBCBFF041977704EA34712 /* Pods-ButterflyShreejwalGiri.release.xcconfig */,
+				2866CE62B2A3B004721DD546 /* Pods-ButterflyShreejwalGiriTests.debug.xcconfig */,
+				11DF8AD0F9C7872CBAE69A85 /* Pods-ButterflyShreejwalGiriTests.release.xcconfig */,
+				D616A5EF4A5E7BC3AF7ECB00 /* Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests.debug.xcconfig */,
+				F3F0DF5521F5143F0C36CFBF /* Pods-ButterflyShreejwalGiri-ButterflyShreejwalGiriTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -655,6 +607,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8082FDBD2BA1E64200D8A73B /* MovieUITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8082FDC62BA1E64300D8A73B /* Build configuration list for PBXNativeTarget "MovieUITest" */;
+			buildPhases = (
+				8082FDBA2BA1E64200D8A73B /* Sources */,
+				8082FDBB2BA1E64200D8A73B /* Frameworks */,
+				8082FDBC2BA1E64200D8A73B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8082FDC52BA1E64200D8A73B /* PBXTargetDependency */,
+			);
+			name = MovieUITest;
+			productName = MovieUITest;
+			productReference = 8082FDBE2BA1E64200D8A73B /* MovieUITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80AA24C32B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiri" */;
@@ -671,44 +641,8 @@
 			);
 			name = ButterflyShreejwalGiri;
 			productName = ButterflyShreejwalGiri;
-			productReference = 80AA24962B99D7F4002F2961 /* ButterflyShreejwalGiri.app */;
+			productReference = 8082FD792BA1E48F00D8A73B /* ButterflyShreejwalGiri.app */;
 			productType = "com.apple.product-type.application";
-		};
-		80AA24AE2B99D7F8002F2961 /* ButterflyShreejwalGiriTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 80AA24C62B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriTests" */;
-			buildPhases = (
-				80AA24AB2B99D7F8002F2961 /* Sources */,
-				80AA24AC2B99D7F8002F2961 /* Frameworks */,
-				80AA24AD2B99D7F8002F2961 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				80AA24B12B99D7F8002F2961 /* PBXTargetDependency */,
-			);
-			name = ButterflyShreejwalGiriTests;
-			productName = ButterflyShreejwalGiriTests;
-			productReference = 80AA24AF2B99D7F8002F2961 /* ButterflyShreejwalGiriTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		80AA24B82B99D7F8002F2961 /* ButterflyShreejwalGiriUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 80AA24C92B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriUITests" */;
-			buildPhases = (
-				80AA24B52B99D7F8002F2961 /* Sources */,
-				80AA24B62B99D7F8002F2961 /* Frameworks */,
-				80AA24B72B99D7F8002F2961 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				80AA24BB2B99D7F8002F2961 /* PBXTargetDependency */,
-			);
-			name = ButterflyShreejwalGiriUITests;
-			productName = ButterflyShreejwalGiriUITests;
-			productReference = 80AA24B92B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -720,16 +654,12 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					8082FDBD2BA1E64200D8A73B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 80AA24952B99D7F4002F2961;
+					};
 					80AA24952B99D7F4002F2961 = {
 						CreatedOnToolsVersion = 15.2;
-					};
-					80AA24AE2B99D7F8002F2961 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 80AA24952B99D7F4002F2961;
-					};
-					80AA24B82B99D7F8002F2961 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 80AA24952B99D7F4002F2961;
 					};
 				};
 			};
@@ -742,38 +672,30 @@
 				Base,
 			);
 			mainGroup = 80AA248D2B99D7F4002F2961;
-			productRefGroup = 80AA24972B99D7F4002F2961 /* Products */;
+			productRefGroup = 80AA248D2B99D7F4002F2961;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */,
-				80AA24AE2B99D7F8002F2961 /* ButterflyShreejwalGiriTests */,
-				80AA24B82B99D7F8002F2961 /* ButterflyShreejwalGiriUITests */,
+				8082FDBD2BA1E64200D8A73B /* MovieUITest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8082FDBC2BA1E64200D8A73B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80AA24942B99D7F4002F2961 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				80AA24A92B99D7F7002F2961 /* LaunchScreen.storyboard in Resources */,
 				80AA24A62B99D7F7002F2961 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80AA24AD2B99D7F8002F2961 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80AA24B72B99D7F8002F2961 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,6 +744,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8082FDBA2BA1E64200D8A73B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80AA24922B99D7F4002F2961 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -831,7 +760,6 @@
 				80188C882B9C7E30001630B2 /* UITableViewExt.swift in Sources */,
 				80E985022B9E769B0089EFEC /* MovieListVm.swift in Sources */,
 				80188C6E2B9C27D0001630B2 /* PurchaseRepoImpl.swift in Sources */,
-				8077C7752B9D8D030059E54F /* AddPurchaseVc.swift in Sources */,
 				80188C402B9BEBD2001630B2 /* ServiceName.swift in Sources */,
 				809916102B9FC7A000A512EE /* MovieDetailsCell.swift in Sources */,
 				80188C682B9C2698001630B2 /* ItemModel.swift in Sources */,
@@ -845,11 +773,8 @@
 				80AA249E2B99D7F4002F2961 /* RootVc.swift in Sources */,
 				80AA249A2B99D7F4002F2961 /* AppDelegate.swift in Sources */,
 				80188C442B9BED92001630B2 /* ApiServiceModel.swift in Sources */,
-				80188C5E2B9BFE7A001630B2 /* HomeVc.swift in Sources */,
 				80E984F02B9E71D70089EFEC /* ProductionCountry.swift in Sources */,
 				80AA249C2B99D7F4002F2961 /* SceneDelegate.swift in Sources */,
-				80188C512B9BF896001630B2 /* DefaultToolBar.swift in Sources */,
-				8077C7692B9D53F70059E54F /* DetailsVc.swift in Sources */,
 				80E9850C2B9EAE340089EFEC /* MovieResult.swift in Sources */,
 				8077C7662B9D4FD40059E54F /* DateConfig.swift in Sources */,
 				80A3D22F2BA02614009D99DD /* ColorConfig.swift in Sources */,
@@ -859,7 +784,6 @@
 				80188C782B9C2C1D001630B2 /* BaseVm.swift in Sources */,
 				8077C76C2B9D54510059E54F /* BaseCoordinator.swift in Sources */,
 				80188C662B9C25B0001630B2 /* PurchaseModel.swift in Sources */,
-				80188C862B9C7CC6001630B2 /* PurchaseCell.swift in Sources */,
 				8077C76F2B9D8A6A0059E54F /* PurchaseOrderList.xcdatamodeld in Sources */,
 				80188C7B2B9C2E61001630B2 /* DataFactory.swift in Sources */,
 				80E984FC2B9E74290089EFEC /* MovieListRepoImpl.swift in Sources */,
@@ -867,6 +791,7 @@
 				80188C5B2B9BF992001630B2 /* StringExt.swift in Sources */,
 				80E984F82B9E73D10089EFEC /* MovieListRepo.swift in Sources */,
 				80E984EE2B9E71BE0089EFEC /* SpokenLanguage.swift in Sources */,
+				8082FD1B2BA1BBD200D8A73B /* MovieCoordinator.swift in Sources */,
 				80188C832B9C2F86001630B2 /* VmFactory.swift in Sources */,
 				80188C762B9C2BC4001630B2 /* PurchaseVm.swift in Sources */,
 				80E984EC2B9E70E90089EFEC /* MovieDetails.swift in Sources */,
@@ -880,7 +805,6 @@
 				80E985052B9E78010089EFEC /* MoviesListVc.swift in Sources */,
 				80A3D2322BA0283D009D99DD /* Theme.swift in Sources */,
 				80188C632B9C2577001630B2 /* CustomTypeAlias.swift in Sources */,
-				80E984E92B9DE0B70089EFEC /* AddItemVc.swift in Sources */,
 				80188C422B9BED5B001630B2 /* ApiServiceRouter.swift in Sources */,
 				80188C4E2B9BF687001630B2 /* ParamsConstant.swift in Sources */,
 				80188C602B9C250D001630B2 /* PurchaseRepo.swift in Sources */,
@@ -888,35 +812,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80AA24AB2B99D7F8002F2961 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80AA24B42B99D7F8002F2961 /* ButterflyShreejwalGiriTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80AA24B52B99D7F8002F2961 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80AA24BE2B99D7F8002F2961 /* ButterflyShreejwalGiriUITests.swift in Sources */,
-				80AA24C02B99D7F8002F2961 /* ButterflyShreejwalGiriUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		80AA24B12B99D7F8002F2961 /* PBXTargetDependency */ = {
+		8082FDC52BA1E64200D8A73B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */;
-			targetProxy = 80AA24B02B99D7F8002F2961 /* PBXContainerItemProxy */;
-		};
-		80AA24BB2B99D7F8002F2961 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 80AA24952B99D7F4002F2961 /* ButterflyShreejwalGiri */;
-			targetProxy = 80AA24BA2B99D7F8002F2961 /* PBXContainerItemProxy */;
+			targetProxy = 8082FDC42BA1E64200D8A73B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -932,6 +834,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8082FDC72BA1E64300D8A73B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NSK6X7SHY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.MovieUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButterflyShreejwalGiri;
+			};
+			name = Debug;
+		};
+		8082FDC82BA1E64300D8A73B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NSK6X7SHY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.MovieUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButterflyShreejwalGiri;
+			};
+			name = Release;
+		};
 		80AA24C12B99D7F8002F2961 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1115,89 +1051,18 @@
 			};
 			name = Release;
 		};
-		80AA24C72B99D7F8002F2961 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8NSK6X7SHY;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflyShreejwalGiri.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButterflyShreejwalGiri";
-			};
-			name = Debug;
-		};
-		80AA24C82B99D7F8002F2961 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8NSK6X7SHY;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterflyShreejwalGiri.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButterflyShreejwalGiri";
-			};
-			name = Release;
-		};
-		80AA24CA2B99D7F8002F2961 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8NSK6X7SHY;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ButterflyShreejwalGiri;
-			};
-			name = Debug;
-		};
-		80AA24CB2B99D7F8002F2961 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8NSK6X7SHY;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = shreejwalgiri.ButterflyShreejwalGiriUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ButterflyShreejwalGiri;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8082FDC62BA1E64300D8A73B /* Build configuration list for PBXNativeTarget "MovieUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8082FDC72BA1E64300D8A73B /* Debug */,
+				8082FDC82BA1E64300D8A73B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		80AA24912B99D7F4002F2961 /* Build configuration list for PBXProject "ButterflyShreejwalGiri" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1212,24 +1077,6 @@
 			buildConfigurations = (
 				80AA24C42B99D7F8002F2961 /* Debug */,
 				80AA24C52B99D7F8002F2961 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		80AA24C62B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				80AA24C72B99D7F8002F2961 /* Debug */,
-				80AA24C82B99D7F8002F2961 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		80AA24C92B99D7F8002F2961 /* Build configuration list for PBXNativeTarget "ButterflyShreejwalGiriUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				80AA24CA2B99D7F8002F2961 /* Debug */,
-				80AA24CB2B99D7F8002F2961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

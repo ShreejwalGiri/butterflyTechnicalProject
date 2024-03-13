@@ -31,6 +31,7 @@ class MovieDetailsVc: RootVc {
         didSet {
             if let id = selectedMovieList?.id {
                 provideMovieVm.delegate = self
+                self.observe(loading: self.provideMovieVm.loading)
                 provideMovieVm.getMovieDetails(id: id)
                 self.tableView.reloadData()
             }

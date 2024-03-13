@@ -18,7 +18,7 @@ open class ColorConfig {
 
 public struct BaseConfig {
     public static var defaultGrey: UIColor               = #colorLiteral(red: 0.7764705882, green: 0.7921568627, blue: 0.8156862745, alpha: 1)
-    public static var defaultWhite: UIColor              = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    public static var defaultWhite: UIColor              = .systemBlue
     public static var defaultBlack: UIColor              = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     
     public static func primaryFade(alphaComponent: CGFloat = 0.3) -> UIColor {

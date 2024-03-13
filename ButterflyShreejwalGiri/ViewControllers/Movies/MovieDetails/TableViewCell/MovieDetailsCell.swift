@@ -10,20 +10,33 @@ import LBTATools
 class MovieDetailsCell: UITableViewCell {
     
     lazy private var movieImage: UIImageView = {
-        let img = UIImageView(backgroundColor: .gray)
+        let img = UIImageView()
         img.contentMode = .redraw
         return img
     }()
-    
-    lazy private var movieTitle: UILabel = {
+
+ 
+    lazy private var titleLable: UILabel = {
         let lbl = Themes.labelThemes.baseTheme.systemBold_14()
         lbl.textAlignment = .left
         return lbl
     }()
     
-    lazy private var releaseDate: UILabel = {
+    lazy private var titleValue: UILabel = {
         let lbl = Themes.labelThemes.baseTheme.systemRegular_12()
+        lbl.textAlignment = .right
+        return lbl
+    }()
+    
+    lazy private var releaseDateLabel: UILabel = {
+        let lbl = Themes.labelThemes.baseTheme.systemBold_14()
         lbl.textAlignment = .left
+        return lbl
+    }()
+    
+    lazy private var releaseDateValue: UILabel = {
+        let lbl = Themes.labelThemes.baseTheme.systemRegular_12()
+        lbl.textAlignment = .right
         return lbl
     }()
     
@@ -71,8 +84,10 @@ class MovieDetailsCell: UITableViewCell {
         
         self.contentView.backgroundColor = .systemBackground
         
-        self.movieTitle.text = item?.title
-        self.releaseDate.text = "Release Date : \( item?.release_date ?? "NA"  )"
+        self.titleLable.text =  "Movie Title"
+        self.titleValue.text = item?.title
+        self.releaseDateLabel.text =  "Release Date"
+        self.releaseDateValue.text =  item?.release_date
         self.movieImage.loadImage(fromWebPath: item?.poster_full_path ?? "NA")
         self.overview.text = item?.overview
         
@@ -89,6 +104,11 @@ class MovieDetailsCell: UITableViewCell {
                 overview,
                 UIView().stack(
                     UIView().hstack(
+                        titleLable,
+                        titleValue,
+                        spacing: 8
+                    ).padLeft(20).padRight(20).padTop(12),
+                    UIView().hstack(
                         spokenLanguageLabel,
                         spokenLanguageValue,
                         spacing: 8
@@ -96,6 +116,11 @@ class MovieDetailsCell: UITableViewCell {
                     UIView().hstack(
                         popularityLabel,
                         popularityValue,
+                        spacing: 8
+                    ).padLeft(20).padRight(20).padTop(12),
+                    UIView().hstack(
+                        releaseDateLabel,
+                        releaseDateValue,
                         spacing: 8
                     ).padLeft(20).padRight(20).padTop(12),
                     spacing: 8
