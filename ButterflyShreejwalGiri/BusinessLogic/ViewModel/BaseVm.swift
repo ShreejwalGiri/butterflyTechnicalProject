@@ -17,6 +17,7 @@ public class BaseVm {
     public var successMsg: String = "Success"
     
     public let loading  : PublishSubject<Bool> = PublishSubject()
+    public let disableloading  : PublishSubject<Bool> = PublishSubject()
     public let error    : PublishSubject<String> = PublishSubject()
 }
 

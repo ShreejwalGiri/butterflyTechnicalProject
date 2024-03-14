@@ -32,8 +32,6 @@ class MoviesListVc: RootVc {
         
         title = "Movie List"
         searchBar.placeholder = "Search Movies"
-//        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
-//        navigationItem.rightBarButtonItem = addButton
         searchBar.delegate = self 
         tableView.delegate = self
         tableView.dataSource = self
@@ -99,7 +97,6 @@ extension MoviesListVc: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-
     @objc func searchTextChanged(_ sender: UITextField) {
         searchText = sender.text ?? ""
         filterData()
@@ -112,12 +109,14 @@ extension MoviesListVc: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchText = searchBar.text ?? ""
         filterData()
+        self.observe(loading: self.provideMovieVm.disableloading)
         tableView.reloadData()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         self.searchText = searchBar.text ?? ""
         filterData()
+        self.observe(loading: self.provideMovieVm.disableloading)
         tableView.reloadData()
     }
     
@@ -125,6 +124,7 @@ extension MoviesListVc: UISearchBarDelegate {
         searchText = ""
         currentPage = 1
         filterData()
+        self.observe(loading: self.provideMovieVm.disableloading)
         tableView.reloadData()
     }
 }

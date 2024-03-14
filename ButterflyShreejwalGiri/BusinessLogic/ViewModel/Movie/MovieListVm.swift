@@ -48,10 +48,11 @@ public class MovieListVm: BaseVm {
     
     public func getMovieList(forPage page: Int, paginationEnable: Bool? = false) {
         self.loading.onNext(true)
+        self.disableloading.onNext(false)
         disposeBag.insert(
             movieListUc.getMovieList(orPage: page, paginationEnable: paginationEnable).subscribe(onNext: { movieList in
                 self.loading.onNext(false)
-                if movieList.success ?? false {
+                if movieList.success {
                     self.delegate?.movieList(data: movieList.results ?? [])
                 } else {
                     self.delegate?.movieFailure(msg: self.errorMsg)
