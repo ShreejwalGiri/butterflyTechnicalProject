@@ -10,6 +10,8 @@ import UIKit
 import Reachability
 class MoviesListVc: RootVc {
     
+    var isSearching = false
+    
     public var navigationDelegate: MovieCoordinatorDelegate?
     final let provideMovieVm = AppFactory.initialize().provideVmFactory().provideMovieVm()
     
@@ -90,11 +92,28 @@ extension MoviesListVc: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard !isSearching else {
+            return
+        }
+        
         if indexPath.row == filteredMovieList.count - 1 && !isLoadingMore {
             currentPage += 1
             isLoadingMore = true
             provideMovieVm.getMovieList(forPage: currentPage)
         }
+    }
+    
+    func toggleSearch(_ isActive: Bool) {
+        isSearching = isActive
+        
+        if isActive {
+            filteredMovieList.removeAll()
+        } else {
+            currentPage = 1
+            isLoadingMore = false
+        }
+        tableView.reloadData()
     }
     
     @objc func searchTextChanged(_ sender: UITextField) {
@@ -107,6 +126,7 @@ extension MoviesListVc: UITableViewDelegate, UITableViewDataSource {
 extension MoviesListVc: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        toggleSearch(true)
         self.searchText = searchBar.text ?? ""
         filterData()
         self.observe(loading: self.provideMovieVm.disableloading)
@@ -114,18 +134,17 @@ extension MoviesListVc: UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        toggleSearch(true)
         self.searchText = searchBar.text ?? ""
         filterData()
         self.observe(loading: self.provideMovieVm.disableloading)
         tableView.reloadData()
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchText = ""
-        currentPage = 1
-        filterData()
-        self.observe(loading: self.provideMovieVm.disableloading)
-        tableView.reloadData()
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        if searchBar.text == "" {
+            toggleSearch(false)
+        }
     }
 }
 
